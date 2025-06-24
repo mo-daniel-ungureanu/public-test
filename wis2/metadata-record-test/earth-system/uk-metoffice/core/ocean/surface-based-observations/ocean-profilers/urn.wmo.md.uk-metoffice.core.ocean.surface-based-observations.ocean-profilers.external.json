@@ -1,58 +1,32 @@
 {
-  "id": "urn:wmo:md:uk-metoffice:core:weather.experimental.surface-based-observations.microwave-radiometer",
+  "id": "urn:wmo:md:uk-metoffice:core:ocean.surface-based-observations.drifting-ocean-profilers",
   "type": "Feature",
   "conformsTo": [
     "http://wis.wmo.int/spec/wcmp/2/conf/core"
   ],
   "geometry": {
-    "type": "MultiPolygon",
+    "type": "Polygon",
     "coordinates": [
       [
         [
-          [
-            -70,
-            12
-          ],
-          [
-            40,
-            10
-          ],
-          [
-            40,
-            90
-          ],
-          [
-            -70,
-            90
-          ],
-          [
-            -70,
-            10
-          ]
-        ]
-      ],
-      [
+          -170,
+          90
+        ],
         [
-          [
-            55,
-            -20
-          ],
-          [
-            55,
-            -22
-          ],
-          [
-            56,
-            -22
-          ],
-          [
-            56,
-            -20
-          ],
-          [
-            55,
-            -20
-          ]
+          180,
+          90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          -180,
+          -90
+        ],
+        [
+          -180,
+          90
         ]
       ]
     ]
@@ -62,11 +36,11 @@
       "T00Z",
       "T23Z"
     ],
-    "resolution": "PT5M"
+    "resolution": "PT6H"
   },
   "properties": {
-    "title": "Ground Based Microwave Radiometer data",
-    "description": "European Network of Microwave Radiometers (MWR) for temperature profiling and humidity observations in the boundary layer.",
+    "title": "UK Argo float data",
+    "description": "Real-time sub-surface ocean observations from UK Argo floats",
     "contacts": [
       {
         "identifier": "MO",
@@ -108,12 +82,10 @@
       }
     ],
     "keywords": [
-      "weather",
-      "surface-based observations",
-      "Upper air Vertical profiles",
-      "Brightness temperature",
-      "temperature",
-      "humidity profiles"
+      "ocean",
+      "sub-surface ocean observations",
+      "ocean profilers",
+      "marine observations"
     ],
     "themes": [
       {
@@ -141,9 +113,9 @@
       {
         "concepts": [
           {
-            "id": "weather",
-            "title": "Weather",
-            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"
+            "id": "ocean",
+            "title": "Ocean",
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/ocean"
           }
         ],
         "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
@@ -151,51 +123,16 @@
       {
         "concepts": [
           {
-            "id": "12",
-            "title": "BUFR/CREX Temperature",
-            "url": "http://codes.wmo.int/bufr4/b/12"
-          },
-          {
-            "id": "13",
-            "title": "BUFR/CREX Hydrographic and hydrological elements",
-            "url": "http://codes.wmo.int/bufr4/b/13"
-          },
-          {
-            "id": "11",
-            "title": "BUFR/CREX Wind and turbulence",
-            "url": "http://codes.wmo.int/bufr4/b/11"
+            "id": "22",
+            "title": "BUFR/CREX Oceanographic elements",
+            "url": "http://codes.wmo.int/bufr4/b/22"
           }
         ],
         "scheme": "http://codes.wmo.int/bufr4/b"
-      },
-      {
-        "concepts": [
-          {
-            "id": "air_temperature",
-            "title": "Air temperature",
-            "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
-          },
-          {
-            "id": "wind_speed",
-            "title": "Wind Speed",
-            "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed/"
-          },
-          {
-            "id": "wind_to_direction",
-            "title": "Wind to diection",
-            "url": "http://vocab.nerc.ac.uk/standard_name/wind_to_direction/"
-          },
-          {
-            "id": "brightness_temperature",
-            "title": "Brightness Temperature",
-            "url": "http://vocab.nerc.ac.uk/standard_name/brightness_temperature/"
-          }
-        ],
-        "scheme": "https://vocab.nerc.ac.uk/standard_name"
       }
     ],
-    "created": "2025-05-06T14:00:00Z",
-    "updated": "2025-05-06T14:00:00Z",
+    "created": "2025-03-06T14:30:00Z",
+    "updated": "2025-03-06T14:30:00Z",
     "wmo:dataPolicy": "core",
     "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
     "type": "dataset",
@@ -205,27 +142,23 @@
       "url": "https://www.metoffice.gov.uk/services/data/business-data/observational"
     }
   },
-  "formats": [
-    {
-      "name": "bufr",
-      "mediaType": "application/x-bufr"
-    },
-    {
-      "name": "netcdf",
-      "mediaType": "application/x-netcdf"
-    }
-  ],
   "links": [
     {
+      "rel": "about",
+      "href": "https://www.ukargo.net/",
+      "type": "text/html",
+      "title": "UK Argo"
+    },
+    {
       "rel": "related",
-      "href": "https://www.eumetnet.eu/observations/vertical-profile-observations/",
+      "href": "https://argo.ucsd.edu/",
       "type": "text/html",
       "title": "Documentation"
     },
     {
       "rel": "items",
       "href": "mqtts://broker.metoffice.gov.uk",
-      "channel": "origin/a/wis2/uk-metoffice/data/core/weather/experimental/surface-based-observations/microwave-radiometer",
+      "channel": "origin/a/wis2/uk-metoffice/data/core/ocean/surface-based-observations/drifting-ocean-profilers",
       "type": "application/geo+json",
       "title": "Data notifications broker"
     }
