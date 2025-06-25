@@ -1,5 +1,5 @@
 {	
-  "id": "urn:wmo:md:uk-metoffice:core:weather.surface-based-observations.synops",	
+  "id": "urn:wmo:md:uk-metoffice:surface-based-observations.synop.uk_synop",	
   "type": "Feature",
   "conformsTo": [	
     "http://wis.wmo.int/spec/wcmp/2/conf/core"	
@@ -198,33 +198,7 @@
           }	
         ],	
         "roles": ["host","producer"]
-      },
-      {
-        "identifier": "IAO",
-        "name": "Observations",
-        "organization": "Met Office",
-        "roles": ["IAO"],
-        "links": [	
-          {	
-            "rel": "canonical",	
-            "type": "text/html",	
-            "href": "https://metoffice.sharepoint.com/sites/KIMcommssite/SitePages/IAO-Portfolios-that-include-Environmental-Data.aspx"	
-          }	
-        ]
-       },
-       {
-         "identifier": "IAG",
-         "name": "Land and Marine data",
-         "position": "IAG",
-         "organization": "Met Office",
-         "links": [	
-          {	
-            "rel": "canonical",	
-            "type": "text/html",	
-            "href": "https://metoffice.sharepoint.com/sites/KIMcommssite/SitePages/IAO-Portfolios-that-include-Environmental-Data.aspx"	
-          }	
-        ]
-       }	
+      }
     ],			
     "keywords": [	
        "weather",	
@@ -233,39 +207,6 @@
        "land observations"	
      ],	
     "themes": [	
-      {	
-        "concepts": [	
-          {	
-            "id": "In-use",	
-            "title": "ukmo:status",
-            "description": "This data is active and available to use.",	
-            "url": "https://reference.metoffice.gov.uk/DataCategories/data-status/In-use"	
-          }	
-        ],	
-        "scheme": "https://reference.metoffice.gov.uk/DataCategories/data-status"
-      },
-      {	
-        "concepts": [	
-          {	
-            "id": "official",	
-            "title": "ukmo:securityClassification",
-            "description": "",	
-            "url": "https://reference.metoffice.gov.uk/SecurityClassifications/Official"	
-          }	
-        ],	
-        "scheme": "https://reference.metoffice.gov.uk/SecurityClassifications"
-      },
-      {	
-        "concepts": [	
-          {	
-            "id": "MO Public Task Data",	
-            "title": "ukmo:ropsiClassification",
-            "description": "Environmental Data that is owned by the Met Office and is public task.",	
-            "url": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification/MOPublicTaskData"	
-          }	
-        ],	
-        "scheme": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification"
-      },
       {	
         "concepts": [	
           {	
@@ -287,17 +228,6 @@
           }	
         ],	
         "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
-      },
-      {	
-        "concepts": [	
-          {	
-            "id": "Permanent",	
-            "title": "ukmo:retention",
-            "description": "A data retention period of 20 years. At the end of this period, the data will be reviewed or deleted.",	
-            "url": "http://reference.metoffice.gov.uk/DataCategories/data-retention/Permanent"	
-          }	
-        ],	
-        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-retention"
       },
       {	
         "concepts": [	
@@ -324,15 +254,12 @@
     "updated": "2025-02-25T12:45:00Z",		
     "wmo:dataPolicy": "core",
     "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021)).",
-    "ukmo:dataLineage": {
-            "description" : "Data is received both from land and marine surface sensors around the UK and overseas territories. Processed through Observation Transformer to produce the coded messages."
-        },	
     "type": "dataset",
     "status": {
       "id": "operational",
       "title": "dataset is in 24/7 operation",
       "url": "https://www.metoffice.gov.uk/services/data/business-data/observational"
-    }	
+    }
   },	
   "links": [
     {	
