@@ -1,5 +1,5 @@
 {	
-  "id": "urn:wmo:md:uk-metoffice-eumetnet:surface-based-observations.microwave-radiometer",	
+  "id": "urn:wmo:md:uk-metoffice-eumetnet:surface-based-observations.lidar-and-ceilometer",	
   "type": "Feature",
   "conformsTo": [	
     "http://wis.wmo.int/spec/wcmp/2/conf/core"	
@@ -9,23 +9,85 @@
         "coordinates": [
           [
             [
-              [-70,10], 
-              [40,10], 
-              [40,90], 
-              [-70,90], 
+              [-70,10],
+              [40,10],
+              [40,90],
+              [-70,90],
               [-70,10]
             ]
           ],
           [
             [
-              [55,-20],
-              [55,-22],
-              [56,-22],
-              [56,-20],
-              [55,-20]
+              [113,-44],
+              [154,-44],
+              [154,-10],
+              [113,-10],
+              [113,-44]
             ]
-          ]
-        ] 
+          ],
+          [
+            [
+              [160,-49],
+              [179,-49],
+              [179,-32],
+              [160,-32],
+              [160,-49]
+            ]
+          ],
+          [
+            [
+              [-143,40],
+              [-55,40],
+              [-55,84],
+              [-143,84],
+              [-143,40]
+            ]
+          ],
+          [
+            [
+              [118.9,22.0],
+              [122,21.5],
+              [122.5,26.0],
+              [119.8,25.0],
+              [118.9,22.0]
+            ]
+          ],
+          [
+            [
+              [-6,-17],
+              [-5,-17],
+              [-5,-15],
+              [-6,-15],
+              [-6,-17]
+            ]
+          ],
+          [
+            [
+              [-173,-15],
+              [-171,-15],
+              [-171,-13],
+              [-173,-13],
+              [-173,-15]
+            ]
+          ],
+          [
+            [
+              [-55,2],
+              [-51,2],
+              [-51,6],
+              [-55,6],
+              [-55,2]
+            ]
+          ],
+          [
+            [
+              [77,-69],
+              [79,-69],
+              [79,-68],
+              [77,-68],
+              [77,-69]
+         ]]
+ ] 
 },
  "time": {	
     "interval": [	
@@ -35,8 +97,8 @@
     "resolution": "PT5M"	
   },  
   "properties": {
-    "title": "Ground Based Microwave Radiometer data",	
-    "description": "European Network of Microwave Radiometers (MWR) for temperature profiling and humidity observations in the boundary layer.",	
+    "title": "LIDAR and Ceilometer data",	
+    "description": "Data from EUMETNET E-PROFILE Programme Automatic lidars and ceilometers (ALC) Network.",	
     "contacts": [	
       {	
         "identifier": "MO",
@@ -77,10 +139,10 @@
     "keywords": [	
        "weather",	
        "surface-based observations",	
-       "Upper air Vertical profiles",
-       "Brightness temperature",
-       "temperature",
-       "humidity profiles"	
+       "attenuated backscatter",
+       "LIDAR",
+       "Ceilometer",
+       "Upper air vertical profiles"	
      ],	
     "themes": [	
       {	
@@ -118,47 +180,27 @@
        {	
         "concepts": [	
           {	
-            "id": "12",	
-            "title": "BUFR/CREX Temperature",	
-            "url": "http://codes.wmo.int/bufr4/b/12"	
+            "id": "2",	
+            "title": "Vertical visibility",	
+            "url": "https://codes.wmo.int/bufr4/b/20/_002"	
           },	
           {	
             "id": "13",	
-            "title": "BUFR/CREX Hydrographic and hydrological elements",	
-            "url": "http://codes.wmo.int/bufr4/b/13"	
-          },	
-          {	
-            "id": "11",	
-            "title": "BUFR/CREX Wind and turbulence",	
-            "url": "http://codes.wmo.int/bufr4/b/11"	
-          }
-        ],	
-        "scheme": "http://codes.wmo.int/bufr4/b"
-      },
-       {	
-        "concepts": [
-          {	
-            "id": "air_temperature",	
-            "title": "Air temperature",	
-            "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"	
-          },	
-          {	
-            "id": "wind_speed",	
-            "title": "Wind Speed",	
-            "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed/"	
-          },	
-          {	
-            "id": "wind_to_direction",	
-            "title": "Wind to diection",	
-            "url": "http://vocab.nerc.ac.uk/standard_name/wind_to_direction/"	
-          },	
-          {	
-            "id": "brightness_temperature",	
-            "title": "Brightness Temperature",	
-            "url": "http://vocab.nerc.ac.uk/standard_name/brightness_temperature/"	
+            "title": "Height of base of cloud",	
+            "url": "https://codes.wmo.int/bufr4/b/20/_013"	
           }	
         ],	
-        "scheme": "https://vocab.nerc.ac.uk/standard_name"
+        "scheme": "http://codes.wmo.int/bufr4/b/20"
+      },	
+      {	
+        "concepts": [	
+          {	
+            "id": "12248",	
+            "title": "Attenuated backscatter",	
+            "url": "https://codes.wmo.int/wmdr/ObservedVariableAtmosphere/_12248"	
+          }	
+        ],	
+        "scheme": "https://codes.wmo.int/wmdr/ObservedVariableAtmosphere"
       }	
     ],	
     "created": "2025-05-06T14:00:00Z",	
@@ -181,8 +223,8 @@
       "name":"netcdf",
       "mediaType":"application/x-netcdf"
     }
-  ],
-  "links": [	
+  ],	
+  "links": [			
     {	
       "rel": "related",	
       "href": "https://www.eumetnet.eu/observations/vertical-profile-observations/",	
@@ -192,7 +234,7 @@
     {	
       "rel": "items",	
       "href": "mqtts://broker.metoffice.gov.uk",	
-      "channel": "origin/a/wis2/uk-metoffice-eumetnet/data/core/weather/experimental/surface-based-observations/microwave-radiometer",	
+      "channel": "origin/a/wis2/uk-metoffice-eumetnet/data/core/weather/experimental/surface-based-observations/lidar-and-ceilometer",	
       "type": "application/geo+json",	
       "title": "Data notifications broker"	
     }	
