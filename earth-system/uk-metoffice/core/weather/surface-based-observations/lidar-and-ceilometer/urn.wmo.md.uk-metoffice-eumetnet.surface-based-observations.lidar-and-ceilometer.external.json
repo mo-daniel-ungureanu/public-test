@@ -1,5 +1,5 @@
 {	
-  "id": "urn:wmo:md:uk-metoffice-eumetnet:surface-based-observations.lidar-and-ceilometer",	
+  "id": "urn:wmo:md:uk-metoffice:surface-based-observations.lidar-and-ceilometer",	
   "type": "Feature",
   "conformsTo": [	
     "http://wis.wmo.int/spec/wcmp/2/conf/core"	
@@ -234,7 +234,7 @@
     {	
       "rel": "items",	
       "href": "mqtts://broker.metoffice.gov.uk",	
-      "channel": "origin/a/wis2/uk-metoffice-eumetnet/data/core/weather/experimental/surface-based-observations/lidar-and-ceilometer",	
+      "channel": "origin/a/wis2/uk-metoffice/data/core/weather/experimental/surface-based-observations/lidar-and-ceilometer",	
       "type": "application/geo+json",	
       "title": "Data notifications broker"	
     }	
