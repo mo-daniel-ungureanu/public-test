@@ -1,44 +1,58 @@
 {	
-  "id": "urn:wmo:md:uk-metoffice:ocean.surface-based-observations.drifting-ocean-profilers.uk_argo_float",	
+  "id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.gnss-total-delay",	
   "type": "Feature",
   "conformsTo": [	
     "http://wis.wmo.int/spec/wcmp/2/conf/core"	
   ],  
-  "geometry": {
-      "type": "Polygon",
-      "coordinates": [[             
-        [
-          -180,
-          90
-        ],
-        [
-          180,
-          90
-        ],
-        [
-          180,
-          -90
-        ],
-        [
-          -180,
-          -90
-        ],
-        [
-          -180,
-          90
-        ] 
-     ]]
- },
+  "geometry": { 
+
+        "type": "MultiPolygon", 
+
+        "coordinates": [[ 
+       [ 
+        [-70, 10], 
+
+        [40, 10], 
+
+        [40, 90], 
+
+        [-70, 90], 
+
+        [-70, 10] 
+       ], 
+       [ 
+         [ 113, -10], 
+
+         [ 154, -10], 
+
+         [ 154, -44], 
+
+         [ 113, -44], 
+
+         [ 113, -10] 
+       ], 
+       [ 
+         [ 73, 54], 
+
+         [ 135, 54], 
+
+         [ 135, 18], 
+
+         [ 73, 18], 
+
+         [ 73, 54] 
+       ]] 
+ ]},
  "time": {	
     "interval": [	
         "T00Z",	
         "T23Z"	
     ],	
-    "resolution": "PT6H"	
+    "resolution": "PT1H"	
   },  
   "properties": {
-    "title": "UK Argo float data",	
-    "description": "Real-time sub-surface ocean observations from UK Argo floats",	
+    "title": "Vertically integrated water vapour data",	
+    "description": "Vertical integrated water vapour derived from GNSS sensors operated by national geodetic agencies.",	
     "contacts": [	
       {	
         "identifier": "MO",
@@ -77,10 +91,11 @@
       }
     ],			
     "keywords": [	
-       "ocean",	
-       "sub-surface ocean observations",	
-       "ocean profilers",
-       "marine observations"	
+       "weather",	
+       "surface-based observations",	
+       "Water vapour",
+       "integrated water vapour",
+       "gnss"	
      ],	
     "themes": [	
       {	
@@ -108,9 +123,9 @@
       {	
         "concepts": [	
           {	
-            "id": "ocean",	
-            "title": "Ocean",	
-            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/ocean"	
+            "id": "weather",	
+            "title": "Weather",	
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"	
           }	
         ],	
         "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
@@ -118,18 +133,18 @@
        {	
         "concepts": [	
           {	
-            "id": "22",	
-            "title": "BUFR/CREX Oceanographic elements",	
-            "url": "http://codes.wmo.int/bufr4/b/22"	
-          }	
+            "id": "031",	
+            "title": "Vertically integrated liquid-water content",	
+            "url": "http://codes.wmo.int/bufr4/b/21/031"	
+          }
         ],	
         "scheme": "http://codes.wmo.int/bufr4/b"
       }	
     ],	
-    "created": "2025-03-06T14:30:00Z",	
-    "updated": "2025-03-06T14:30:00Z",		
+    "created": "2025-05-06T14:00:00Z",	
+    "updated": "2025-05-06T14:00:00Z",		
     "wmo:dataPolicy": "core",
-     "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
+    "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
     "type": "dataset",
     "status": {
       "id": "operational",
@@ -137,23 +152,17 @@
       "url": "https://www.metoffice.gov.uk/services/data/business-data/observational"
     }
   },	
-  "links": [
-    {	
-      "rel": "about",	
-      "href": "https://www.ukargo.net/",	
-      "type": "text/html",	
-      "title": "UK Argo"	
-    },
+  "links": [	
     {	
       "rel": "related",	
-      "href": "https://argo.ucsd.edu/",	
+      "href": "https://www.eumetnet.eu/observations/gnss-water-vapour-observations/",	
       "type": "text/html",	
       "title": "Documentation"	
     },	
     {	
       "rel": "items",	
       "href": "mqtts://broker.metoffice.gov.uk",	
-      "channel": "origin/a/wis2/uk-metoffice/data/core/ocean/surface-based-observations/drifting-ocean-profilers",	
+      "channel": "origin/a/wis2/uk-metoffice/data/core/weather/surface-based-observations",	
       "type": "application/geo+json",	
       "title": "Data notifications broker"	
     }	
