@@ -1,17 +1,17 @@
 {	
-  "id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.ship.ship-reports",	
+  "id": "urn:wmo:md:uk-metoffice:ocean.surface-based-observations.drifting-ocean-profilers.uk_argo_float",	
   "type": "Feature",
   "conformsTo": [	
     "http://wis.wmo.int/spec/wcmp/2/conf/core"	
   ],  
- "geometry": {
+  "geometry": {
       "type": "Polygon",
       "coordinates": [[             
-        [-180, 90],
-        [180, 90],
+       [-180, 90],
+        [180,  90],
         [180, -90],
-        [-180, -90],
-        [-180, 90]
+        [-180,-90],
+        [-180, 90] 
      ]]
  },
  "time": {	
@@ -19,15 +19,15 @@
         "T00Z",	
         "T23Z"	
     ],	
-    "resolution": "PT1H"	
+    "resolution": "PT6H"	
   },  
   "properties": {
-    "title": "Ship reports",	
-    "description": "Marine ship reports",
+    "title": "UK Argo float data",	
+    "description": "The UK Argo float data is part of the international Argo programme, which deploys autonomous profiling floats globally to collect subsurface ocean observations. These floats measure temperature, salinity, and increasingly biogeochemical parameters such as dissolved oxygen, chlorophyll fluorescence, optical backscatter, pH, nitrate, and irradiance. Floats typically cycle every 10 days, drifting at ~1000m depth before descending to ~2000m and ascending while collecting data. Data are distributed via WIS2 in BUFR format, the data are also available from the two Argo Global Data Assembly Centres (GDACs) in netCDF format. The UK Argo Programme is carried out through collaboration between the Met Office, the National Oceanography Centre (NOC) and the British Antarctic Survey (BAS).",	
     "contacts": [	
       {	
         "identifier": "MO",
-        "name": "UK Met Office weather desk",	
+        "name": "Met Office",	
         "organization": "Met Office",	
         "phones": [	
           {	
@@ -44,7 +44,7 @@
             "deliveryPoint": [	
               "FitzRoy Road"	
             ],	
-            "name": "UK Met Office",	
+            "name": "Met Office",	
             "city": "Exeter",	
             "administrativeArea": "Devon",
             "postalCode": "EX1 3PB",	
@@ -62,22 +62,17 @@
       }
     ],			
     "keywords": [	
-       "weather",	
-       "surface based observations",	
-       "marine",
-       "voluntary observing ships",
-       "VOS programme",
-       "ships",
-       "ship observations",
-       "automated ships"	
+       "ocean",	
+       "sub-surface ocean observations",	
+       "ocean profilers",
+       "marine observations"	
      ],	
     "themes": [	
       {	
         "concepts": [	
           {	
             "id": "Application-ready",	
-            "title": "ukmo:dataReadiness",
-            "description": "",	
+            "title": "dataReadiness",
             "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"	
           }	
         ],	
@@ -87,7 +82,7 @@
         "concepts": [	
           {	
             "id": "Observations",	
-            "title": "ukmo:dataType",
+            "title": "dataType",
             "description": "Observations data are defined as measurements of the physical, chemical and/or biological environment, measured at a specific time in the past.  They may be direct or indirect measurements and may be feature or coverage data.  In order to be valid, observations data must carry geospatial and temporal metadata as well as variable values (or equivalent such as pixel values for a faster coverage).",	
             "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/Observations"	
           }	
@@ -97,46 +92,58 @@
       {	
         "concepts": [	
           {	
-            "id": "weather",	
-            "title": "Weather",	
-            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"	
+            "id": "ocean",	
+            "title": "Ocean",	
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/ocean"	
           }	
         ],	
         "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
        },
        {	
-        "concepts": [
-          {
-            "id": "22",
-            "title": "BUFR/CREX Oceanographic elements",
-            "url": "http://codes.wmo.int/bufr4/b/22"
-          }
-        ],
+        "concepts": [	
+          {	
+            "id": "22",	
+            "title": "BUFR/CREX Oceanographic elements",	
+            "url": "http://codes.wmo.int/bufr4/b/22"	
+          }	
+        ],	
         "scheme": "http://codes.wmo.int/bufr4/b"
-      }
-    ],
-    "created": "2025-06-27T15:00:00Z",
-    "updated": "2025-06-27T15:00:00Z",
+      }	
+    ],	
+    "created": "2025-03-06T14:30:00Z",	
+    "updated": "2025-03-06T14:30:00Z",		
     "wmo:dataPolicy": "core",
-    "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021)).",
+     "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
     "type": "dataset",
     "status": {
       "id": "operational",
       "title": "dataset is in 24/7 operation",
       "url": "https://www.metoffice.gov.uk/services/data/business-data/observational"
     }
-  },
+  },	
   "links": [
     {	
+      "rel": "about",	
+      "href": "https://www.ukargo.net/",	
+      "type": "text/html",	
+      "title": "UK Argo"	
+    },
+    {	
       "rel": "related",	
-      "href": "https://weather.metoffice.gov.uk/learn-about/how-forecasts-are-made/observations/marine-observations",	
+      "href": "https://argo.ucsd.edu/",	
       "type": "text/html",	
       "title": "Documentation"	
     },	
+    {
+      "rel": "related",	
+      "href": "https://argo.ucsd.edu/data/data-from-gdacs/",	
+      "type": "text/html",	
+      "title": "Documentation"	
+    },
     {	
       "rel": "items",	
       "href": "mqtts://broker.metoffice.gov.uk",	
-      "channel": "origin/a/wis2/uk-metoffice/data/core/weather/surface-based-observations/ship",	
+      "channel": "origin/a/wis2/uk-metoffice/data/core/ocean/surface-based-observations/drifting-ocean-profilers",	
       "type": "application/geo+json",	
       "title": "Data notifications broker"	
     }	

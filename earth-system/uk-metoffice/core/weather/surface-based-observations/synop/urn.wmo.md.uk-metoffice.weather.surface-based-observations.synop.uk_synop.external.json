@@ -1,48 +1,68 @@
 {	
-  "id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.gnss-total-delay",	
+  "id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.synop.uk_synop",	
   "type": "Feature",
   "conformsTo": [	
     "http://wis.wmo.int/spec/wcmp/2/conf/core"	
   ],  
-  "geometry": { 
-
-        "type": "MultiPolygon", 
-
-        "coordinates": [[ 
-       [ 
-        [-70, 10], 
-
-        [40, 10], 
-
-        [40, 90], 
-
-        [-70, 90], 
-
-        [-70, 10] 
-       ], 
-       [ 
-         [ 113, -10], 
-
-         [ 154, -10], 
-
-         [ 154, -44], 
-
-         [ 113, -44], 
-
-         [ 113, -10] 
-       ], 
-       [ 
-         [ 73, 54], 
-
-         [ 135, 54], 
-
-         [ 135, 18], 
-
-         [ 73, 18], 
-
-         [ 73, 54] 
-       ]] 
- ]},
+  "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
+          [ 
+            [ 
+              [-11.0, 61.0],
+              [2.0,   61.0],
+              [2.0,   49.0],
+              [-11.0, 49.0],
+              [-11.0, 61.0]
+           ]
+         ],
+         [ 
+            [
+              [32.26, 34.57],
+              [34.00, 34.57],
+              [34.00, 35.69],
+              [32.26, 35.69],
+              [32.26, 34.57]
+           ]
+         ],
+         [ 
+            [
+              [-5.37, 36.11],
+              [-5.33, 36.11],
+              [-5.33, 36.16],
+              [-5.37, 36.16],
+              [-5.37, 36.11]
+           ]
+         ],
+         [ 
+            [
+              [-62.50,-53.50],
+              [-56.50, -53.50],
+              [-56.50, -50.50],
+              [-62.50, -50.50],
+              [-62.50, -53.50]
+           ]
+         ],
+         [ 
+            [
+              [-5.80, -16.10],
+              [-5.60, -16.10],
+              [-5.60, -15.80],
+              [-5.80, -15.80],
+              [-5.80, -16.10]
+           ]
+         ],
+         [ 
+            [
+              [-14.45,-7.995],
+              [-14.45, -7.88],
+              [-14.287, -7.88],
+              [-14.287, -7.995],
+              [ -14.45, -7.995]
+           ]
+         ]
+     ]
+ },
  "time": {	
     "interval": [	
         "T00Z",	
@@ -51,12 +71,12 @@
     "resolution": "PT1H"	
   },  
   "properties": {
-    "title": "Vertically integrated water vapour data",	
-    "description": "Vertical integrated water vapour derived from GNSS sensors operated by national geodetic agencies.",	
+    "title": "Intermediate, Main hour, and Non-routine Synops",	
+    "description": "SYNOP (Surface Synoptic Observations) are standardized meteorological reports from fixed land-based observation stations. In the UK, these observations are collected by automated weather stations. Each SYNOP report typically includes: Air temperature and dew point, Atmospheric pressure, Wind speed and direction, Cloud cover and types, Visibility and weather phenomena, Precipitation and sunshine duration, Snow depth and state of ground (at designated hours). Reports are issued hourly from UK stations. BUFR is the primary format for object services, offering full WMO-compliant encoding.",	
     "contacts": [	
       {	
         "identifier": "MO",
-        "name": "UK Met Office weather desk",	
+        "name": "Met Office",	
         "organization": "Met Office",	
         "phones": [	
           {	
@@ -73,7 +93,7 @@
             "deliveryPoint": [	
               "FitzRoy Road"	
             ],	
-            "name": "UK Met Office",	
+            "name": "Met Office",	
             "city": "Exeter",	
             "administrativeArea": "Devon",
             "postalCode": "EX1 3PB",	
@@ -92,18 +112,16 @@
     ],			
     "keywords": [	
        "weather",	
-       "surface-based observations",	
-       "Water vapour",
-       "integrated water vapour",
-       "gnss"	
+       "surface based observations",	
+       "synops",
+       "land observations"	
      ],	
     "themes": [	
       {	
         "concepts": [	
           {	
             "id": "Application-ready",	
-            "title": "ukmo:dataReadiness",
-            "description": "",	
+            "title": "dataReadiness",
             "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"	
           }	
         ],	
@@ -113,7 +131,7 @@
         "concepts": [	
           {	
             "id": "Observations",	
-            "title": "ukmo:dataType",
+            "title": "dataType",
             "description": "Observations data are defined as measurements of the physical, chemical and/or biological environment, measured at a specific time in the past.  They may be direct or indirect measurements and may be feature or coverage data.  In order to be valid, observations data must carry geospatial and temporal metadata as well as variable values (or equivalent such as pixel values for a faster coverage).",	
             "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/Observations"	
           }	
@@ -133,18 +151,18 @@
        {	
         "concepts": [	
           {	
-            "id": "031",	
-            "title": "Vertically integrated liquid-water content",	
-            "url": "http://codes.wmo.int/bufr4/b/21/031"	
-          }
+            "id": "19",	
+            "title": "BUFR/CREX Synoptic features",	
+            "url": "http://codes.wmo.int/bufr4/b/19"	
+          }	
         ],	
         "scheme": "http://codes.wmo.int/bufr4/b"
       }	
     ],	
-    "created": "2025-05-06T14:00:00Z",	
-    "updated": "2025-05-06T14:00:00Z",		
+    "created": "2024-12-14T13:05:00Z",	
+    "updated": "2025-02-25T12:45:00Z",		
     "wmo:dataPolicy": "core",
-    "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
+    "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021)).",
     "type": "dataset",
     "status": {
       "id": "operational",
@@ -152,17 +170,17 @@
       "url": "https://www.metoffice.gov.uk/services/data/business-data/observational"
     }
   },	
-  "links": [	
+  "links": [
     {	
       "rel": "related",	
-      "href": "https://www.eumetnet.eu/observations/gnss-water-vapour-observations/",	
+      "href": "https://www.metoffice.gov.uk/weather/guides/observations/uk-observations-network",	
       "type": "text/html",	
       "title": "Documentation"	
     },	
     {	
       "rel": "items",	
       "href": "mqtts://broker.metoffice.gov.uk",	
-      "channel": "origin/a/wis2/uk-metoffice/data/core/weather/surface-based-observations",	
+      "channel": "origin/a/wis2/uk-metoffice/data/core/weather/surface-based-observations/synop",	
       "type": "application/geo+json",	
       "title": "Data notifications broker"	
     }	
