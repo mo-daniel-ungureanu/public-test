@@ -121,7 +121,7 @@
     "type": "dataset",
     "status": {
       "id": "operational",
-      "title": "dataset is in 24/7 operation",
+      "title": "dataset is in operation",
       "url": "https://www.metoffice.gov.uk/services/data/business-data/observational"
     }
   },
