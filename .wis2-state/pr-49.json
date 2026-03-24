@@ -1,0 +1,535 @@
+[
+  {
+    "rel_path": "earth-system/uk-metoffice/core/ocean/surface-based-observations/moored-buoys-and-moorings/urn.wmo.md.uk-metoffice.ocean.surface-based-observations.moored-buoys-and-moorings.moored-buoys.external_copy.json",
+    "status": "ADD",
+    "rel": "canonical",
+    "topic": "origin/a/wis2/uk-metoffice/metadata",
+    "notification": {
+      "id": "24cb9c17-e95a-4ce4-8f9c-b68e75230aa3",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.0,
+              0.0
+            ],
+            [
+              20.0,
+              0.0
+            ],
+            [
+              20.0,
+              70.0
+            ],
+            [
+              -80.0,
+              70.0
+            ],
+            [
+              -80.0,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pubtime": "2026-03-24T12:52:44Z",
+        "data_id": "urn:wmo:md:uk-metoffice:ocean.surface-based-observations.moored-buoys-and-moorings.moored-buoys",
+        "metadata_id": "urn:wmo:md:uk-metoffice:ocean.surface-based-observations.moored-buoys-and-moorings.moored-buoys",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "yXpSKrV5bVzIBZqsAqUyK8pskegOfSZrHx8CiKtJXtoiYjym3v1BQBZvdD+yLRaIu9xHrkW0YfnRAOr1Csiofg=="
+        },
+        "datetime": "2025-06-27T15:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/uk-metoffice/core/ocean/surface-based-observations/moored-buoys-and-moorings/urn.wmo.md.uk-metoffice.ocean.surface-based-observations.moored-buoys-and-moorings.moored-buoys.external_copy.json",
+          "rel": "canonical",
+          "type": "application/geo+json",
+          "length": 4917
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  },
+  {
+    "rel_path": "earth-system/uk-metoffice/core/weather/surface-based-observations/synop/urn.wmo.md.uk-metoffice.weather.surface-based-observations.synop.uk-synop.external_copy.json",
+    "status": "ADD",
+    "rel": "canonical",
+    "topic": "origin/a/wis2/uk-metoffice/metadata",
+    "notification": {
+      "id": "75af4ac7-5dcf-4a4f-b34e-f68c05214004",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -11.0,
+                61.0
+              ],
+              [
+                2.0,
+                61.0
+              ],
+              [
+                2.0,
+                49.0
+              ],
+              [
+                -11.0,
+                49.0
+              ],
+              [
+                -11.0,
+                61.0
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                32.26,
+                34.57
+              ],
+              [
+                34.0,
+                34.57
+              ],
+              [
+                34.0,
+                35.69
+              ],
+              [
+                32.26,
+                35.69
+              ],
+              [
+                32.26,
+                34.57
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -5.37,
+                36.11
+              ],
+              [
+                -5.33,
+                36.11
+              ],
+              [
+                -5.33,
+                36.16
+              ],
+              [
+                -5.37,
+                36.16
+              ],
+              [
+                -5.37,
+                36.11
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -62.5,
+                -53.5
+              ],
+              [
+                -56.5,
+                -53.5
+              ],
+              [
+                -56.5,
+                -50.5
+              ],
+              [
+                -62.5,
+                -50.5
+              ],
+              [
+                -62.5,
+                -53.5
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -5.8,
+                -16.1
+              ],
+              [
+                -5.6,
+                -16.1
+              ],
+              [
+                -5.6,
+                -15.8
+              ],
+              [
+                -5.8,
+                -15.8
+              ],
+              [
+                -5.8,
+                -16.1
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -14.45,
+                -7.995
+              ],
+              [
+                -14.45,
+                -7.88
+              ],
+              [
+                -14.287,
+                -7.88
+              ],
+              [
+                -14.287,
+                -7.995
+              ],
+              [
+                -14.45,
+                -7.995
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pubtime": "2026-03-24T12:52:44Z",
+        "data_id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.synop.uk-synop",
+        "metadata_id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.synop.uk-synop",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "yD2YcSxQ6dAj/N4KA1MCvlfT2GWyk5gi0GabdX4u9dnXHBg9WH82zNsZPF5YSZTpZe51FBwo+yTXAHNYen3QAA=="
+        },
+        "datetime": "2024-12-14T13:05:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/uk-metoffice/core/weather/surface-based-observations/synop/urn.wmo.md.uk-metoffice.weather.surface-based-observations.synop.uk-synop.external_copy.json",
+          "rel": "canonical",
+          "type": "application/geo+json",
+          "length": 6110
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  },
+  {
+    "rel_path": "earth-system/uk-metoffice/core/ocean/surface-based-observations/moored-buoys-and-moorings/urn.wmo.md.uk-metoffice.ocean.surface-based-observations.moored-buoys-and-moorings.moored-buoys.external.json",
+    "status": "MOD",
+    "rel": "update",
+    "topic": "origin/a/wis2/uk-metoffice/metadata",
+    "notification": {
+      "id": "8e0906ea-e7b3-4a0f-a964-c92070cb39dc",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.0,
+              0.0
+            ],
+            [
+              20.0,
+              0.0
+            ],
+            [
+              20.0,
+              70.0
+            ],
+            [
+              -80.0,
+              70.0
+            ],
+            [
+              -80.0,
+              0.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pubtime": "2026-03-24T12:52:44Z",
+        "data_id": "urn:wmo:md:uk-metoffice:ocean.surface-based-observations.moored-buoys-and-moorings.moored-buoys",
+        "metadata_id": "urn:wmo:md:uk-metoffice:ocean.surface-based-observations.moored-buoys-and-moorings.moored-buoys",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "zECuUQoPED/+T39x4//bor63uiUzvDtmFcylLrzwFc7PUOR5NrceHIt2c1d2FsPCF8dv/KCk/3TwIVPw1fsabQ=="
+        },
+        "datetime": "2025-06-27T15:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/uk-metoffice/core/ocean/surface-based-observations/moored-buoys-and-moorings/urn.wmo.md.uk-metoffice.ocean.surface-based-observations.moored-buoys-and-moorings.moored-buoys.external.json",
+          "rel": "update",
+          "type": "application/geo+json",
+          "length": 4917
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  },
+  {
+    "rel_path": "earth-system/uk-metoffice/core/weather/surface-based-observations/synop/urn.wmo.md.uk-metoffice.weather.surface-based-observations.synop.uk-synop.external.json",
+    "status": "DEL",
+    "rel": "deletion",
+    "topic": "origin/a/wis2/uk-metoffice/metadata",
+    "notification": {
+      "id": "e657ff2d-1c96-4ebd-b818-322bd20b62ed",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -11.0,
+                61.0
+              ],
+              [
+                2.0,
+                61.0
+              ],
+              [
+                2.0,
+                49.0
+              ],
+              [
+                -11.0,
+                49.0
+              ],
+              [
+                -11.0,
+                61.0
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                32.26,
+                34.57
+              ],
+              [
+                34.0,
+                34.57
+              ],
+              [
+                34.0,
+                35.69
+              ],
+              [
+                32.26,
+                35.69
+              ],
+              [
+                32.26,
+                34.57
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -5.37,
+                36.11
+              ],
+              [
+                -5.33,
+                36.11
+              ],
+              [
+                -5.33,
+                36.16
+              ],
+              [
+                -5.37,
+                36.16
+              ],
+              [
+                -5.37,
+                36.11
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -62.5,
+                -53.5
+              ],
+              [
+                -56.5,
+                -53.5
+              ],
+              [
+                -56.5,
+                -50.5
+              ],
+              [
+                -62.5,
+                -50.5
+              ],
+              [
+                -62.5,
+                -53.5
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -5.8,
+                -16.1
+              ],
+              [
+                -5.6,
+                -16.1
+              ],
+              [
+                -5.6,
+                -15.8
+              ],
+              [
+                -5.8,
+                -15.8
+              ],
+              [
+                -5.8,
+                -16.1
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -14.45,
+                -7.995
+              ],
+              [
+                -14.45,
+                -7.88
+              ],
+              [
+                -14.287,
+                -7.88
+              ],
+              [
+                -14.287,
+                -7.995
+              ],
+              [
+                -14.45,
+                -7.995
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pubtime": "2026-03-24T12:52:44Z",
+        "data_id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.synop.uk-synop",
+        "metadata_id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.synop.uk-synop",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "yD2YcSxQ6dAj/N4KA1MCvlfT2GWyk5gi0GabdX4u9dnXHBg9WH82zNsZPF5YSZTpZe51FBwo+yTXAHNYen3QAA=="
+        },
+        "datetime": "2024-12-14T13:05:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/uk-metoffice/core/weather/surface-based-observations/synop/urn.wmo.md.uk-metoffice.weather.surface-based-observations.synop.uk-synop.external.json",
+          "rel": "deletion",
+          "type": "application/geo+json",
+          "length": 6110
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  },
+  {
+    "rel_path": "earth-system/uk-metoffice/core/weather/surface-based-observations/synop/urn.wmo.md.uk-metoffice.weather.surface-based-observations.synop.uk_synop.external.json",
+    "status": "DEL",
+    "rel": "deletion",
+    "topic": "origin/a/wis2/uk-metoffice/metadata",
+    "notification": {
+      "id": "54fa9651-0425-4a1c-96df-c3aee8081887",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "pubtime": "2026-03-24T12:52:44Z",
+        "data_id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.synop.uk_synop",
+        "metadata_id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.synop.uk_synop",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "+LVqwBoFSfAoMYiiEtrK6tGMKD62j54hrhi/dAWr6tnislOsR3UBjWpd9iA2MO1PTMyFr2mCsZRVL2hRWBoJNQ=="
+        },
+        "datetime": "2024-12-14T13:05:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/uk-metoffice/core/weather/surface-based-observations/synop/urn.wmo.md.uk-metoffice.weather.surface-based-observations.synop.uk_synop.external.json",
+          "rel": "deletion",
+          "type": "application/geo+json",
+          "length": 4782
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  }
+]
