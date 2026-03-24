@@ -1,0 +1,1072 @@
+{
+    "id": "urn:wmo:md:uk-metoffice:weather.prediction.forecast.global-10km",
+    "type": "Feature",
+    "conformsTo": [
+        "http://wis.wmo.int/spec/wcmp/2/conf/core"
+    ],
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -180,
+                    90
+                ],
+                [
+                    180,
+                    90
+                ],
+                [
+                    180,
+                    -90
+                ],
+                [
+                    -180,
+                    -90
+                ],
+                [
+                    -180,
+                    90
+                ]
+            ]
+        ]
+    },
+    "time": {
+        "interval": [
+            "T00Z",
+            "T23Z"
+        ],
+        "resolution": "PT6H"
+    },
+    "additionalExtents": {
+        "vertical": {
+            "interval": [
+                [
+                    "5",
+                    "6000"
+                ]
+            ],
+            "values": [
+                "5",
+                "10",
+                "20",
+                "30",
+                "50",
+                "75",
+                "100",
+                "150",
+                "200",
+                "250",
+                "300",
+                "400",
+                "500",
+                "600",
+                "700",
+                "800",
+                "1000",
+                "1250",
+                "1500",
+                "1750",
+                "2000",
+                "2250",
+                "2500",
+                "2750",
+                "3000",
+                "3250",
+                "3500",
+                "3750",
+                "4000",
+                "4500",
+                "5000",
+                "5500",
+                "6000"
+            ],
+            "vrs": "VERTCS[\"WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PARAMETER[\"Vertical_Shift\",0.0],PARAMETER[\"Direction\",1.0],UNIT[\"Meter\",1.0]],AXIS[\"Up\",UP]",
+            "description": "Vertical extent defined by geometric height levels in meters above the WGS84 ellipsoid, ranging from 5m to 6000m. These levels are commonly used for atmospheric and environmental datasets."
+        },
+        "pressureLevels": {
+            "interval": [
+                [
+                    "1000",
+                    "10"
+                ]
+            ],
+            "values": [
+                "1000",
+                "975",
+                "950",
+                "925",
+                "900",
+                "850",
+                "800",
+                "750",
+                "700",
+                "650",
+                "600",
+                "550",
+                "500",
+                "450",
+                "400",
+                "375",
+                "350",
+                "325",
+                "300",
+                "275",
+                "250",
+                "225",
+                "200",
+                "175",
+                "150",
+                "125",
+                "100",
+                "70",
+                "50",
+                "40",
+                "30",
+                "20",
+                "10"
+            ],
+            "vrs": "PARAMETRICCRS[\"WMO standard atmosphere layer 0\",PDATUM[\"Mean Sea Level\",ANCHOR[\"101325 Pa at 15°C\"]],CS[parametric,1],AXIS[\"pressure (hPa)\",down],PARAMETRICUNIT[\"hPa\",1.0]]",
+            "description": "Vertical extent defined by standard atmospheric pressure levels in hectopascals (hPa), ranging from 1000 hPa (near surface) to 10 hPa (upper stratosphere). The vertical coordinate reference system follows the WMO standard atmosphere, with pressure increasing downward. These levels are commonly used in meteorological and climate datasets for representing atmospheric layers."
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "T00Z",
+                    "PT168H"
+                ],
+                [
+                    "T06Z",
+                    "PT67H"
+                ],
+                [
+                    "T12Z",
+                    "PT168H"
+                ],
+                [
+                    "T18Z",
+                    "PT67H"
+                ]
+            ],
+            "values": [
+                "R54/T00Z/PT1H",
+                "R29/PT57H/PT3H",
+                "R3/PT150H/PT6H"
+            ],
+            "resolution": "PT1H",
+            "trs": "http://www.opengis.net/def/trs/ISO-8601",
+            "description": "Forecast are produced four times daily:longer runs at T00Z and T12Z, and shorter runs at T06Z and T18Z. Each run covers 7 days (168 hours), with 1-hourly timesteps up to 54 hours, 3-hourly timesteps from 57 to 144 hours, and 6-hourly timesteps thereafter. The shortened runs provide forecasts up to 67 hours."
+        }
+    },
+    "properties": {
+        "title": "Met Office Global Deterministic",
+        "description": "The Met Office's flagship Numerical Weather Prediction system, the Unified Model, underpins both weather and climate prediction and is used in several operational configurations. The Global deterministic 10km model is a global configuration of the Unified Model, delivering highly accurate short-range deterministic forecasts for up to six or seven days, and is recognised as one of the most advanced national meteorological services. Forecasts are generated four times daily: extended runs at 00:00 and 12:00 UTC, and shorter runs at 06:00 and 18:00 UTC.",
+        "contacts": [
+            {
+                "identifier": "MO",
+                "name": "Met Office",
+                "organization": "Met Office",
+                "phones": [
+                    {
+                        "value": "+443301350000"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "servicedesk@metoffice.gov.uk"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "deliveryPoint": [
+                            "FitzRoy Road"
+                        ],
+                        "name": "Met Office",
+                        "city": "Exeter",
+                        "administrativeArea": "Devon",
+                        "postalCode": "EX1 3PB",
+                        "country": "United Kingdom"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "canonical",
+                        "type": "text/html",
+                        "href": "https://www.metoffice.gov.uk/about-us/contact"
+                    }
+                ],
+                "roles": [
+                    "host",
+                    "producer"
+                ]
+            }
+        ],
+        "keywords": [
+            "weather",
+            "prediction",
+            "forecast",
+            "medium range",
+            "deterministic",
+            "global"
+        ],
+        "themes": [
+            {
+                "concepts": [
+                    {
+                        "id": "Application-ready",
+                        "title": "dataReadiness",
+                        "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"
+                    }
+                ],
+                "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-readiness"
+            },
+            {
+                "concepts": [
+                    {
+                        "id": "PredictionsPostProcessed",
+                        "title": "dataType",
+                        "description": "Predictions and Post Processed data are defined as data that infers a full coverage of the state of the physical, chemical and/or biological environment within a given domain and specific context. This includes data assimilation analysis, projections and predictions to different times and post processed outputs derived from predictions. Data are produced using automated production typically in large volumes controlled by algorithms and data science. Prediction data can take many forms, but they always have a Geospatial Feature, Coverage or native grids on creation. They may be packaged differently for supply for customer requirement.",
+                        "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/PredictionsPostProcessed"
+                    }
+                ],
+                "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
+            },
+            {
+                "concepts": [
+                    {
+                        "id": "weather",
+                        "title": "Weather",
+                        "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"
+                    }
+                ],
+                "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
+            },
+            {
+                "concepts": [
+                    {
+                        "id": "atmosphere_boundary_layer_thickness",
+                        "title": "boundary_layer_depth",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/atmosphere_boundary_layer_thickness/"
+                    },
+                    {
+                        "id": "atmosphere_convective_available_potential_energy",
+                        "title": "CAPE_mixed_layer_lowest_500m",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/atmosphere_convective_available_potential_energy/"
+                    },
+                    {
+                        "id": "atmosphere_convective_available_potential_energy",
+                        "title": "CAPE_most_unstable_below_500hPa",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/atmosphere_convective_available_potential_energy/"
+                    },
+                    {
+                        "id": "atmosphere_convective_available_potential_energy_wrt_surface",
+                        "title": "CAPE_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/atmosphere_convective_available_potential_energy_wrt_surface/"
+                    },
+                    {
+                        "id": "atmosphere_convective_inhibition",
+                        "title": "CIN_mixed_layer_lowest_500m",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/atmosphere_convective_inhibition/"
+                    },
+                    {
+                        "id": "atmosphere_convective_inhibition",
+                        "title": "CIN_most_unstable_below_500hPa",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/atmosphere_convective_inhibition/"
+                    },
+                    {
+                        "id": "atmosphere_convective_inhibition_wrt_surface",
+                        "title": "CIN_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/atmosphere_convective_inhibition_wrt_surface/"
+                    },
+                    {
+                        "id": "canopy_water_amount",
+                        "title": "canopy_water_amount",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/canopy_water_amount/"
+                    },
+                    {
+                        "id": "cloud_area_fraction",
+                        "title": "cloud_amount_below_1000ft_ASL",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/cloud_area_fraction/"
+                    },
+                    {
+                        "id": "convective_cloud_area_fraction",
+                        "title": "cloud_amount_of_convective_cloud_on_height_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_cloud_area_fraction/"
+                    },
+                    {
+                        "id": "convective_cloud_area_fraction",
+                        "title": "cloud_amount_of_convective_cloud_on_pressure_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_cloud_area_fraction/"
+                    },
+                    {
+                        "id": "high_type_cloud_area_fraction",
+                        "title": "cloud_amount_of_high_cloud",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/high_type_cloud_area_fraction/"
+                    },
+                    {
+                        "id": "low_type_cloud_area_fraction",
+                        "title": "cloud_amount_of_low_cloud",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/low_type_cloud_area_fraction/"
+                    },
+                    {
+                        "id": "medium_type_cloud_area_fraction",
+                        "title": "cloud_amount_of_medium_cloud",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/medium_type_cloud_area_fraction/"
+                    },
+                    {
+                        "id": "cloud_area_fraction",
+                        "title": "cloud_amount_of_total_cloud",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/cloud_area_fraction/"
+                    },
+                    {
+                        "id": "convective_cloud_area_fraction",
+                        "title": "cloud_amount_of_total_convective_cloud",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_cloud_area_fraction/"
+                    },
+                    {
+                        "id": "cloud_area_fraction",
+                        "title": "cloud_amount_on_height_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/cloud_area_fraction/"
+                    },
+                    {
+                        "id": "cloud_area_fraction",
+                        "title": "cloud_amount_on_pressure_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/cloud_area_fraction/"
+                    },
+                    {
+                        "id": "cloud_ice_mixing_ratio",
+                        "title": "cloud_ice_mixing_ratio_on_height_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/cloud_ice_mixing_ratio/"
+                    },
+                    {
+                        "id": "cloud_ice_mixing_ratio",
+                        "title": "cloud_ice_mixing_ratio_on_pressure_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/cloud_ice_mixing_ratio/"
+                    },
+                    {
+                        "id": "cloud_liquid_water_mixing_ratio",
+                        "title": "cloud_water_mixing_ratio_on_height_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/cloud_liquid_water_mixing_ratio/"
+                    },
+                    {
+                        "id": "cloud_liquid_water_mixing_ratio",
+                        "title": "cloud_water_mixing_ratio_on_pressure_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/cloud_liquid_water_mixing_ratio/"
+                    },
+                    {
+                        "id": "mass_fraction_of_dust_dry_aerosol_particles_in_air",
+                        "title": "dust_mass_mixing_ratio_division_1_on_height_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/mass_fraction_of_dust_dry_aerosol_particles_in_air/"
+                    },
+                    {
+                        "id": "mass_fraction_of_dust_dry_aerosol_particles_in_air",
+                        "title": "dust_mass_mixing_ratio_division_1_on_pressure_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/mass_fraction_of_dust_dry_aerosol_particles_in_air/"
+                    },
+                    {
+                        "id": "mass_fraction_of_dust_dry_aerosol_particles_in_air",
+                        "title": "dust_mass_mixing_ratio_division_2_on_height_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/mass_fraction_of_dust_dry_aerosol_particles_in_air/"
+                    },
+                    {
+                        "id": "mass_fraction_of_dust_dry_aerosol_particles_in_air",
+                        "title": "dust_mass_mixing_ratio_division_2_on_pressure_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/mass_fraction_of_dust_dry_aerosol_particles_in_air/"
+                    },
+                    {
+                        "id": "fog_area_fraction",
+                        "title": "fog_fraction_at_screen_level",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/fog_area_fraction/"
+                    },
+                    {
+                        "id": "geopotential_height",
+                        "title": "height_ASL_at_base_of_convective_inflow",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/geopotential_height/"
+                    },
+                    {
+                        "id": "altitude",
+                        "title": "height_ASL_at_cloud_base_where_cloud_cover_2p5_oktas",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/altitude/"
+                    },
+                    {
+                        "id": "altitude",
+                        "title": "height_ASL_at_cloud_base_where_cloud_cover_4p5_oktas",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/altitude/"
+                    },
+                    {
+                        "id": "geopotential_height",
+                        "title": "height_ASL_at_freezing_level",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/geopotential_height/"
+                    },
+                    {
+                        "id": "altitude",
+                        "title": "height_ASL_at_mixed_layer_CAPE_equilibrium_level",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/altitude/"
+                    },
+                    {
+                        "id": "altitude",
+                        "title": "height_ASL_at_most_unstable_CAPE_equilibrium_level",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/altitude/"
+                    },
+                    {
+                        "id": "altitude",
+                        "title": "height_ASL_at_most_unstable_CAPE_initiation_level",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/altitude/"
+                    },
+                    {
+                        "id": "altitude",
+                        "title": "height_ASL_at_top_of_convective_inflow.",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/altitude/"
+                    },
+                    {
+                        "id": "altitude",
+                        "title": "height_ASL_at_wet_bulb_freezing_level",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/altitude/"
+                    },
+                    {
+                        "id": "geopotential_height",
+                        "title": "height_ASL_on_pressure_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/geopotential_height/"
+                    },
+                    {
+                        "id": "surface_altitude",
+                        "title": "height_of_orography",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/surface_altitude/"
+                    },
+                    {
+                        "id": "land_binary_mask",
+                        "title": "landsea_mask",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/land_binary_mask/"
+                    },
+                    {
+                        "id": "leaf_area_index",
+                        "title": "leaf_area_index",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/leaf_area_index/"
+                    },
+                    {
+                        "id": "lwe_precipitation_rate",
+                        "title": "precipitation_rate",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_precipitation_rate/"
+                    },
+                    {
+                        "id": "air_pressure_at_convective_cloud_base",
+                        "title": "pressure_at_convective_cloud_base",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/air_pressure_at_convective_cloud_base/"
+                    },
+                    {
+                        "id": "air_pressure_at_convective_cloud_top",
+                        "title": "pressure_at_convective_cloud_top",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/air_pressure_at_convective_cloud_top/"
+                    },
+                    {
+                        "id": "air_pressure_at_freezing_level",
+                        "title": "pressure_at_freezing_level",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/air_pressure_at_freezing_level/"
+                    },
+                    {
+                        "id": "air_pressure",
+                        "title": "pressure_at_maximum_wind_speed_height",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/air_pressure/"
+                    },
+                    {
+                        "id": "air_pressure_at_sea_level",
+                        "title": "pressure_at_mean_sea_level",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_pressure_at_sea_level/"
+                    },
+                    {
+                        "id": "surface_air_pressure",
+                        "title": "pressure_at_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_air_pressure/"
+                    },
+                    {
+                        "id": "air_pressure",
+                        "title": "pressure_at_tropopause",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/air_pressure/"
+                    },
+                    {
+                        "id": "air_pressure",
+                        "title": "pressure_on_height_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/air_pressure/"
+                    },
+                    {
+                        "id": "surface_downwelling_longwave_flux_in_air",
+                        "title": "radiation_flux_in_longwave_downward_at_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_downwelling_longwave_flux_in_air/"
+                    },
+                    {
+                        "id": "toa_outgoing_longwave_flux",
+                        "title": "radiation_flux_in_longwave_outgoing_at_top_of_atmosphere",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/toa_outgoing_longwave_flux/"
+                    },
+                    {
+                        "id": "surface_direct_downwelling_shortwave_flux_in_air",
+                        "title": "radiation_flux_in_shortwave_direct_downward_at_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_direct_downwelling_shortwave_flux_in_air/"
+                    },
+                    {
+                        "id": "surface_diffusive_downwelling_shortwave_flux_in_air",
+                        "title": "radiation_flux_in_shortwave_diffuse_downward_at_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_diffusive_downwelling_shortwave_flux_in_air/"
+                    },
+                    {
+                        "id": "surface_downwelling_shortwave_flux_in_air",
+                        "title": "radiation_flux_in_shortwave_total_downward_at_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_downwelling_shortwave_flux_in_air/"
+                    },
+                    {
+                        "id": "surface_net_downward_shortwave_flux",
+                        "title": "radiation_flux_in_shortwave_net_at_surface",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/surface_net_downward_shortwave_flux/"
+                    },
+                    {
+                        "id": "surface_upwelling_radiance_in_air",
+                        "title": "radiation_flux_in_uv_downward_at_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_upwelling_radiance_in_air/"
+                    },
+                    {
+                        "id": "surface_upwelling_radiance_in_air",
+                        "title": "radiation_flux_in_uv_upward_at_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_upwelling_radiance_in_air/"
+                    },
+                    {
+                        "id": "rainfall_rate",
+                        "title": "rainfall_rate",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/rainfall_rate/"
+                    },
+                    {
+                        "id": "convective_rainfall_rate",
+                        "title": "rainfall_rate_from_convection",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_rainfall_rate/"
+                    },
+                    {
+                        "id": "relative_humidity",
+                        "title": "relative_humidity_at_screen_level",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/relative_humidity/"
+                    },
+                    {
+                        "id": "relative_humidity",
+                        "title": "relative_humidity_on_height_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/relative_humidity/"
+                    },
+                    {
+                        "id": "relative_humidity",
+                        "title": "relative_humidity_on_pressure_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/relative_humidity/"
+                    },
+                    {
+                        "id": "surface_roughness_length",
+                        "title": "roughness_length",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/surface_roughness_length/"
+                    },
+                    {
+                        "id": "surface_upward_sensible_heat_flux",
+                        "title": "sensible_heat_flux_at_surface",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/surface_upward_sensible_heat_flux/"
+                    },
+                    {
+                        "id": "lwe_thickness_of_surface_snow_amount",
+                        "title": "snow_depth_water_equivalent",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_thickness_of_surface_snow_amount/"
+                    },
+                    {
+                        "id": "lwe_snowfall_rate",
+                        "title": "snowfall_rate",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_rate_from_convection",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "liquid_water_content_of_soil_layer",
+                        "title": "soil_mass_concentration_of_water_on_soil_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/liquid_water_content_of_soil_layer/"
+                    },
+                    {
+                        "id": "soil_temperature",
+                        "title": "soil_temperature_on_soil_levels",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/soil_temperature/"
+                    },
+                    {
+                        "id": "specific_humidity",
+                        "title": "specific_humidity_at_screen_level",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/specific_humidity/"
+                    },
+                    {
+                        "id": "air_temperature",
+                        "title": "temperature_at_screen_level",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
+                    },
+                    {
+                        "id": "surface_temperature",
+                        "title": "temperature_at_surface",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_temperature/"
+                    },
+                    {
+                        "id": "tropopause_air_temperature",
+                        "title": "temperature_at_tropopause",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/tropopause_air_temperature/"
+                    },
+                    {
+                        "id": "dew_point_temperature",
+                        "title": "temperature_of_dew_point_at_screen_level",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/dew_point_temperature/"
+                    },
+                    {
+                        "id": "air_temperature",
+                        "title": "temperature_on_height_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
+                    },
+                    {
+                        "id": "air_temperature",
+                        "title": "temperature_on_pressure_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
+                    },
+                    {
+                        "id": "visibility_in_air",
+                        "title": "visibility_at_screen_level",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/visibility_in_air/"
+                    },
+                    {
+                        "id": "wet_bulb_potential_temperature",
+                        "title": "wet_bulb_potential_temperature_on_pressure_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wet_bulb_potential_temperature/"
+                    },
+                    {
+                        "id": "wind_from_direction",
+                        "title": "wind_direction_at_10m",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_from_direction/"
+                    },
+                    {
+                        "id": "wind_from_direction",
+                        "title": "wind_direction_at_maximum_wind_speed_height",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_from_direction/"
+                    },
+                    {
+                        "id": "wind_direction",
+                        "title": "wind_direction_on_height_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_direction/"
+                    },
+                    {
+                        "id": "wind_direction",
+                        "title": "wind_direction_on_pressure_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_direction/"
+                    },
+                    {
+                        "id": "wind_speed_of_gust",
+                        "title": "wind_gust_at_10m",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed_of_gust/"
+                    },
+                    {
+                        "id": "wind_speed",
+                        "title": "wind_speed_at_10m",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed/"
+                    },
+                    {
+                        "id": "wind_speed",
+                        "title": "wind_speed_at_maximum_wind_speed_height",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed/"
+                    },
+                    {
+                        "id": "wind_speed",
+                        "title": "wind_speed_on_height_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed/"
+                    },
+                    {
+                        "id": "wind_speed",
+                        "title": "wind_speed_on_pressure_levels",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed/"
+                    },
+                    {
+                        "id": "surface_upward_latent_heat_flux",
+                        "title": "latent_heat_flux_at_surface_mean-PT01H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_upward_latent_heat_flux/"
+                    },
+                    {
+                        "id": "precipitation_amount",
+                        "title": "precipitation_accumulation-PT01H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/precipitation_amount/"
+                    },
+                    {
+                        "id": "rainfall_amount",
+                        "title": "rainfall_accumulation-PT01H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/rainfall_amount/"
+                    },
+                    {
+                        "id": "convective_rainfall_amount",
+                        "title": "rainfall_accumulation_from_convection-PT01H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/convective_rainfall_amount/"
+                    },
+                    {
+                        "id": "convective_rainfall_rate",
+                        "title": "rainfall_rate_from_convection_max-PT01H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_rainfall_rate/"
+                    },
+                    {
+                        "id": "convective_rainfall_rate",
+                        "title": "rainfall_rate_from_convection_mean-PT01H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_rainfall_rate/"
+                    },
+                    {
+                        "id": "rainfall_rate",
+                        "title": "rainfall_rate_max-PT01H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/rainfall_rate/"
+                    },
+                    {
+                        "id": "surface_downward_sensible_heat_flux",
+                        "title": "sensible_heat_flux_at_surface_mean-PT01H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/surface_downward_sensible_heat_flux/"
+                    },
+                    {
+                        "id": "lwe_thickness_of_snowfall_amount",
+                        "title": "snowfall_accumulation-PT01H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_thickness_of_snowfall_amount/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_accumulation_from_convection-PT01H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_rate_from_convection_max-PT01H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_rate_from_convection_mean-PT01H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_snowfall_rate",
+                        "title": "snowfall_rate_max-PT01H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/lwe_snowfall_rate/"
+                    },
+                    {
+                        "id": "air_temperature",
+                        "title": "temperature_at_screen_level_max-PT01H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
+                    },
+                    {
+                        "id": "air_temperature",
+                        "title": "temperature_at_screen_level_min-PT01H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
+                    },
+                    {
+                        "id": "wind_speed_of_gust",
+                        "title": "wind_gust_at_10m_max-PT01H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed_of_gust/"
+                    },
+                    {
+                        "id": "surface_upward_latent_heat_flux",
+                        "title": "latent_heat_flux_at_surface_mean-PT03H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_upward_latent_heat_flux/"
+                    },
+                    {
+                        "id": "precipitation_amount",
+                        "title": "precipitation_accumulation-PT03H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/precipitation_amount/"
+                    },
+                    {
+                        "id": "rainfall_amount",
+                        "title": "rainfall_accumulation-PT03H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/rainfall_amount/"
+                    },
+                    {
+                        "id": "convective_rainfall_amount",
+                        "title": "rainfall_accumulation_from_convection-PT03H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/convective_rainfall_amount/"
+                    },
+                    {
+                        "id": "convective_rainfall_rate",
+                        "title": "rainfall_rate_from_convection_max-PT03H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_rainfall_rate/"
+                    },
+                    {
+                        "id": "convective_rainfall_rate",
+                        "title": "rainfall_rate_from_convection_mean-PT03H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_rainfall_rate/"
+                    },
+                    {
+                        "id": "rainfall_rate",
+                        "title": "rainfall_rate_max-PT03H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/rainfall_rate/"
+                    },
+                    {
+                        "id": "surface_downward_sensible_heat_flux",
+                        "title": "sensible_heat_flux_at_surface_mean-PT03H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/surface_downward_sensible_heat_flux/"
+                    },
+                    {
+                        "id": "lwe_thickness_of_snowfall_amount",
+                        "title": "snowfall_accumulation-PT03H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_thickness_of_snowfall_amount/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_accumulation_from_convection-PT03H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_rate_from_convection_max-PT03H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_rate_from_convection_mean-PT03H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_snowfall_rate",
+                        "title": "snowfall_rate_max-PT03H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/lwe_snowfall_rate/"
+                    },
+                    {
+                        "id": "air_temperature",
+                        "title": "temperature_at_screen_level_max-PT03H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
+                    },
+                    {
+                        "id": "air_temperature",
+                        "title": "temperature_at_screen_level_min-PT03H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
+                    },
+                    {
+                        "id": "wind_speed_of_gust",
+                        "title": "wind_gust_at_10m_max-PT03H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed_of_gust/"
+                    },
+                    {
+                        "id": "surface_upward_latent_heat_flux",
+                        "title": "latent_heat_flux_at_surface_mean-PT06H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/surface_upward_latent_heat_flux/"
+                    },
+                    {
+                        "id": "precipitation_amount",
+                        "title": "precipitation_accumulation-PT06H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/precipitation_amount/"
+                    },
+                    {
+                        "id": "rainfall_amount",
+                        "title": "rainfall_accumulation-PT06H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/rainfall_amount/"
+                    },
+                    {
+                        "id": "convective_rainfall_amount",
+                        "title": "rainfall_accumulation_from_convection-PT06H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/convective_rainfall_amount/"
+                    },
+                    {
+                        "id": "convective_rainfall_rate",
+                        "title": "rainfall_rate_from_convection_max-PT06H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_rainfall_rate/"
+                    },
+                    {
+                        "id": "convective_rainfall_rate",
+                        "title": "rainfall_rate_from_convection_mean-PT06H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/convective_rainfall_rate/"
+                    },
+                    {
+                        "id": "rainfall_rate",
+                        "title": "rainfall_rate_max-PT06H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/rainfall_rate/"
+                    },
+                    {
+                        "id": "surface_downward_sensible_heat_flux",
+                        "title": "sensible_heat_flux_at_surface_mean-PT06H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/surface_downward_sensible_heat_flux/"
+                    },
+                    {
+                        "id": "lwe_thickness_of_snowfall_amount",
+                        "title": "snowfall_accumulation-PT06H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_thickness_of_snowfall_amount/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_accumulation_from_convection-PT06H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_rate_from_convection_max-PT06H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_convective_snowfall_rate",
+                        "title": "snowfall_rate_from_convection_mean-PT06H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/lwe_convective_snowfall_rate/"
+                    },
+                    {
+                        "id": "lwe_snowfall_rate",
+                        "title": "snowfall_rate_max-PT06H",
+                        "url": "https://vocab.nerc.ac.uk/standard_name/lwe_snowfall_rate/"
+                    },
+                    {
+                        "id": "air_temperature",
+                        "title": "temperature_at_screen_level_max-PT06H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
+                    },
+                    {
+                        "id": "air_temperature",
+                        "title": "temperature_at_screen_level_min-PT06H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"
+                    },
+                    {
+                        "id": "wind_speed_of_gust",
+                        "title": "wind_gust_at_10m_max-PT06H",
+                        "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed_of_gust/"
+                    }
+                ],
+                "scheme": "https://vocab.nerc.ac.uk/standard_name/"
+            }
+        ],
+        "created": "2026-01-28T15:00:00Z",
+        "updated": "2026-01-28T15:00:00Z",
+        "wmo:dataPolicy": "recommended",
+        "rights": "British Crown copyright 2023-2025, the Met Office",
+        "license": "CC BY-SA",
+        "type": "dataset",
+        "formats": [
+            {
+                "name": "netcdf",
+                "mediaType": "application/netcdf"
+            }
+        ]
+    },
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+            "type": "text/html",
+            "title": "License"
+        },
+        {
+            "rel": "related",
+            "href": "https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting",
+            "type": "text/html",
+            "title": "Documentation"
+        },
+        {
+            "rel": "items",
+            "href": "mqtts://broker.metoffice.gov.uk",
+            "channel": "origin/a/wis2/uk-metoffice/data/recommended/weather/prediction/forecast/medium-range/deterministic/global",
+            "type": "application/geo+json",
+            "title": "Data notifications broker",
+            "properties": {
+                "diagnostic": {
+                    "type": "string",
+                    "title": "Diagnostic",
+                    "description": "The diagnostic filter parameter is the title property of the concept object within the themes array, where the scheme is 'https://vocab.nerc.ac.uk/standard_name/'."
+                },
+                "timestep": {
+                    "type": "string",
+                    "title": "Timestep",
+                    "enum": [
+                        "T+00",
+                        "T+01",
+                        "T+02",
+                        "T+03",
+                        "T+04",
+                        "T+05",
+                        "T+06",
+                        "T+07",
+                        "T+08",
+                        "T+09",
+                        "T+10",
+                        "T+11",
+                        "T+12",
+                        "T+13",
+                        "T+14",
+                        "T+15",
+                        "T+16",
+                        "T+17",
+                        "T+18",
+                        "T+19",
+                        "T+20",
+                        "T+21",
+                        "T+22",
+                        "T+23",
+                        "T+24",
+                        "T+25",
+                        "T+26",
+                        "T+27",
+                        "T+28",
+                        "T+29",
+                        "T+30",
+                        "T+31",
+                        "T+32",
+                        "T+33",
+                        "T+34",
+                        "T+35",
+                        "T+36",
+                        "T+37",
+                        "T+38",
+                        "T+39",
+                        "T+40",
+                        "T+41",
+                        "T+42",
+                        "T+43",
+                        "T+44",
+                        "T+45",
+                        "T+46",
+                        "T+47",
+                        "T+48",
+                        "T+49",
+                        "T+50",
+                        "T+51",
+                        "T+52",
+                        "T+53",
+                        "T+54",
+                        "T+57",
+                        "T+60",
+                        "T+63",
+                        "T+66",
+                        "T+69",
+                        "T+72",
+                        "T+75",
+                        "T+78",
+                        "T+81",
+                        "T+84",
+                        "T+87",
+                        "T+90",
+                        "T+93",
+                        "T+96",
+                        "T+99",
+                        "T+102",
+                        "T+105",
+                        "T+108",
+                        "T+111",
+                        "T+114",
+                        "T+117",
+                        "T+120",
+                        "T+123",
+                        "T+126",
+                        "T+129",
+                        "T+132",    
+                        "T+135",
+                        "T+138",
+                        "T+141",
+                        "T+144",
+                        "T+150",
+                        "T+156",
+                        "T+162",
+                        "T+168"
+                    ],
+                    "example": "T+06"
+                },
+                "model_run_hour": {
+                    "type": "string",
+                    "title": "Model run hour",
+                    "enum": [
+                        "00",
+                        "12"
+                    ],
+                    "example": "00"
+                }
+            }
+        }        
+    ]
+
+}

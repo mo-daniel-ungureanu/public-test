@@ -1,0 +1,166 @@
+{
+    "id": "urn:wmo:md:uk-metoffice-wmc:weather.prediction.forecast.mogreps-g-tc",
+    "type": "Feature",
+    "conformsTo": [
+        "http://wis.wmo.int/spec/wcmp/2/conf/core"
+    ],
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [[             
+        [-180, 90],
+        [ 180, 90],
+        [ 180,-90],
+        [-180,-90],
+        [-180, 90] 
+     ]]
+    },
+    "time": {	
+      "interval": ["T00Z", "T23Z"],
+      "resolution": "PT6H"
+    },
+    "additionalExtents": {
+        "temporal": {
+            "interval": [
+              ["T00Z","PT240H"],
+              ["T06Z","PT240H"],
+              ["T12Z","PT240H"],
+              ["T18Z","PT240H"]
+            ],
+            "resolution": "null",
+            "trs": "http://www.opengis.net/def/trs/ISO-8601",
+            "description": "Forecast are produced four times daily at T00Z, T06Z, T12Z and T18Z. Each run covers 240 hours."
+        }
+    },
+    "properties": {
+        "title": "Ensemble Tropical Cyclone",
+        "alias": "MOGREPS-G ensemble tropical cyclone vortex parameter file in BUFR format",
+        "description": "The MOGREPS-G Tropical Cyclone BUFR files are produced 6-hourly and contain forecasts out to T+240 from 36 ensemble members. Forecasts for named and forming storms are included. The BUFR file contains tropical cyclone vortex parameter data on forecast TC track positions and parameters in accordance with Appendix 2.2.5 section 2 of the Manual on the WMO Integrated Processing and Prediction System. The BUFR TC files became part of the requirements following INFCOM3.",
+        "contacts": [
+            {
+                "identifier": "MO",
+                "name": "Met Office",
+                "organization": "Met Office",
+                "phones": [
+                    {
+                        "value": "+443301350000"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "servicedesk@metoffice.gov.uk"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "deliveryPoint": [
+                            "FitzRoy Road"
+                        ],
+                        "name": "Met Office",
+                        "city": "Exeter",
+                        "administrativeArea": "Devon",
+                        "postalCode": "EX1 3PB",
+                        "country": "United Kingdom"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "canonical",
+                        "type": "text/html",
+                        "href": "https://www.metoffice.gov.uk/about-us/contact"
+                    }
+                ],
+                "roles": [
+                    "host",
+                    "producer"
+                ]
+            }
+        ],
+        "keywords": [
+           "weather",	
+           "prediction",	
+           "forecast",
+           "medium range",
+           "probabilistic",
+           "trajectory",
+           "tropical cyclone"
+        ],
+        "themes": [
+            {
+                "concepts": [
+                    {
+                        "id": "Application-ready",
+                        "title": "dataReadiness",
+                        "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"
+                    }
+                ],
+                "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-readiness"
+            },
+            {
+                "concepts": [
+                    {
+                        "id": "PredictionsPostProcessed",
+                        "title": "dataType",
+                        "description": "Predictions and Post Processed data are defined as data that infers a full coverage of the state of the physical, chemical and/or biological environment within a given domain and specific context. This includes data assimilation analysis, projections and predictions to different times and post processed outputs derived from predictions. Data are produced using automated production typically in large volumes controlled by algorithms and data science. Prediction data can take many forms, but they always have a Geospatial Feature, Coverage or native grids on creation. They may be packaged differently for supply for customer requirement.",
+                        "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/PredictionsPostProcessed"
+                    }
+                ],
+                "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
+            },
+            {
+                "concepts": [
+                    {
+                        "id": "weather",
+                        "title": "Weather",
+                        "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"
+                    }
+                ],
+                "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
+            },
+            {	
+                "concepts": [	
+                  {	
+                       "id": "22",	
+                       "title": "BUFR/CREX Oceanographic elements",	
+                       "url": "http://codes.wmo.int/bufr4/b/22"	
+                   }	
+                 ],	
+                 "scheme": "http://codes.wmo.int/bufr4/b"
+            }	            
+        ],
+        "created": "2026-01-27T15:00:00Z",
+        "updated": "2026-01-27T15:00:00Z",
+        "wmo:dataPolicy": "core",
+        "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021)).",
+        "type": "dataset",
+        "formats": [
+         {
+          "name": "bufr",
+          "mediaType": "application/bufr"
+         }
+       ]
+    },
+    "links": [
+        {
+            "rel": "related",
+            "href": "https://www.metoffice.gov.uk/research/weather/tropical-cyclones/index",
+            "type": "text/html",
+            "title": "Documentation"
+        },
+        {	
+      "rel": "items",	
+      "href": "mqtts://broker.metoffice.gov.uk",	
+      "channel": "origin/a/wis2/uk-metoffice-wmc/data/core/weather/prediction/forecast/medium-range/probabilistic/trajectory",
+      "type": "application/geo+json",	
+      "title": "Data notifications broker",
+      "properties": {
+         "model_run_hour": {
+            "type": "string",
+            "title": "Model run hour",
+            "enum": ["00", "06", "12", "18"],
+            "example": "00"
+         }
+      }
+    }
+  ]
+
+}

@@ -1,0 +1,306 @@
+{	
+  "id": "urn:md:uk-metoffice:weather.prediction.forecast.global_md_mss",	
+  "type": "Feature",
+  "conformsTo": [	
+    ""	
+  ],  
+  "geometry": {
+      "type": "Polygon",
+      "coordinates": [[
+         [-180, 90],
+         [180,  90],
+         [180, -90],
+         [-180,-90],
+         [-180, 90] 
+     ]]
+ },
+ "time": {	
+    "interval": [	
+        "T06Z",	
+        "T23Z"	
+    ],	
+    "resolution": "PT6H"	
+  },
+ "additionalExtents": {
+    "temporal": {
+      "interval": [
+        ["T06Z","PT36H"],
+        ["T12Z","PT36H"]
+    ],
+    "resolution": "PT6H",
+    "trs": "http://www.opengis.net/def/trs/ISO-8601",
+    "description": "Forecast runs twice daily at times T06Z and T12Z. Each run covers 36 hours, with time steps between T06Z and T36Z, and 6-hourly intervals."
+   },
+   "vertical": {
+      "interval": [
+        ["250","700"]
+      ],
+      "values": ["250", "300", "400", "500","600", "700"],
+      "vrs": "VERTCS[\"WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PARAMETER[\"Vertical_Shift\",0.0],PARAMETER[\"Direction\",1.0],UNIT[\"hPa\",1.0]],AXIS[\"Up\",UP]",
+      "description": "Pressure levels vary by parameter: Temperature, wind(u) and wind(v) at 700, 600, 500, 400, 300, and 250hPa; Pressure at mean sea level."
+    }
+  },
+  "heightLevels": {
+       "interval": [
+         ["1.5","10"]
+      ],
+      "values": ["1.5", "10"],
+      "vrs": "VERTCS[\"WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PARAMETER[\"Vertical_Shift\",0.0],PARAMETER[\"Direction\",1.0],UNIT[\"Meter\",1.0]],AXIS[\"Up\",UP]",
+      "description": "Height levels vary by parameter: 1.5m Temperature at 1.5m; 10m wind(u) and 10m wind(v) at 10m. Pressure at mean sea level."
+    },
+  "properties": {
+    "title": "NWP data: Global (GRIB1): MD MSS (Multi Domain Mission Support System) GRIB",	
+    "description": "A Global Numerical Weather Prediction (NWP) product in GRIB1 format, derived from the Met Office Global Model. It is part of the MD MSS (Airscape) suite.",	
+    "contacts": [	
+      {	
+        "identifier": "MO",
+        "name": "Met Office",	
+        "organization": "Met Office",	
+        "phones": [	
+          {	
+            "value": "+443301350000"	
+          }	
+        ],	
+        "emails": [	
+          {	
+            "value": "servicedesk@metoffice.gov.uk"	
+          }	
+        ],	
+        "addresses": [	
+          {	
+            "deliveryPoint": [	
+              "FitzRoy Road"	
+            ],	
+            "name": "Met Office",	
+            "city": "Exeter",	
+            "administrativeArea": "Devon",
+            "postalCode": "EX1 3PB",	
+            "country": "United Kingdom"	
+          }
+        ],	
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://www.metoffice.gov.uk/about-us/contact"	
+          }	
+        ],	
+        "roles": ["host","producer"]
+      },
+      {
+        "identifier": "IAO",
+        "name": "Predictions and Post Processed",
+        "organization": "Met Office",
+        "roles": ["IAO"],
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://metoffice.sharepoint.com/:u:/r/sites/EDCommsSite/SitePages/Master-list-of-IAO-Portfolios.aspx?csf=1&web=1&e=bKyrna"	
+          }	
+        ]
+       },
+       {
+         "identifier": "IAG",
+         "name": "Level 1 + NWP Data + Obs Space Predictions",
+         "position": "IAG",
+         "roles": ["IAG"],
+         "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://metoffice.sharepoint.com/:u:/r/sites/EDCommsSite/SitePages/Master-list-of-IAO-Portfolios.aspx?csf=1&web=1&e=bKyrna"	
+          }	
+        ]
+       }	
+    ],			
+    "keywords": [	
+       "ocean",	
+       "prediction",	
+       "forecast",
+       "short-range",
+       "deterministic",
+       "global",
+       "temperature",
+       "wind (u)",
+       "wind (v)",
+       "1.5m temperature",
+       "10m wind (u)",
+       "10m wind (v)",
+       "mslp"
+     ],	
+    "themes": [	
+      {	
+        "concepts": [	
+          {	
+            "id": "In-use",	
+            "title": "status",
+            "description": "This data is active and available to use.",	
+            "url": "https://reference.metoffice.gov.uk/DataCategories/data-status/In-use"	
+          }	
+        ],	
+        "scheme": "https://reference.metoffice.gov.uk/DataCategories/data-status"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "Official-Sensitive",	
+            "title": "securityClassification",
+            "description": "The -SENSITIVE marking should be applied to OFFICIAL information that is not intended for public release and that is of at least some interest to threat actors (internal or external), activists or the media. A compromise of OFFICIAL-SENSITIVE information is likely to cause moderate damage to the work or reputation of the Met Office and/or His Majesty’s Government and must be marked.",	
+            "url": "http://reference.metoffice.gov.uk/SecurityClassifications/Official-Sensitive"	
+          }	
+        ],	
+        "scheme": "https://reference.metoffice.gov.uk/SecurityClassifications"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "OtherHMGPublicTaskData",	
+            "title": "ropsiClassification",
+            "description": "Environmental Data that is not Met Office Public Task but forms part of the Public Task of another UK Government Department and for which the Met Office has been involved in creating that data.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification/OtherHMGPublicTaskData"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "Application-ready",	
+            "title": "dataReadiness",
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-readiness"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "PredictionsPostProcessed",	
+            "title": "dataType",
+            "description": "Predictions and Post Processed data are defined as data that infers a full coverage of the state of the physical, chemical and/or biological environment within a given domain and specific context. This includes data assimilation analysis, projections and predictions to different times and post processed outputs derived from predictions. Data are produced using automated production typically in large volumes controlled by algorithms and data science. Prediction data can take many forms, but they always have a Geospatial Feature, Coverage or native grids on creation. They may be packaged differently for supply for customer requirement.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/PredictionsPostProcessed"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "2Years",	
+            "title": "retention",
+            "description": "A data retention period of 2 years. At the end of this period, the data will be reviewed or deleted.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-retention/2Years"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-retention"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "ocean",	
+            "title": "Ocean",	
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/tree/main/topic-hierarchy/earth-system-discipline/ocean"	
+          }	
+        ],	
+        "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/tree/main/topic-hierarchy/earth-system-discipline"
+       },
+       {	
+        "concepts": [	
+          {	
+            "id": "1",	
+            "title": "FM 92 GRIB edition 1",	
+            "url": "http://codes.wmo.int/codeform/grib1"	
+          }	
+        ],	
+        "scheme": "http://codes.wmo.int/codeform"
+      },
+      {	
+        "concepts": [	
+          {	
+            "idhttp://codes.wmo.int/grib2/codeflag/4.2/0-0-0": "0-0-0",	
+            "title": "Temperature",	
+            "url": ""	
+          },
+          {	
+            "id": "0-2-2",	
+            "title": "u-component of wind",	
+            "url": "http://codes.wmo.int/grib2/codeflag/4.2/0-2-2"	
+          },
+          {	
+            "id": "0-2-3",	
+            "title": "v-component of wind",	
+            "url": "http://codes.wmo.int/grib2/codeflag/4.2/0-2-3"	
+          },
+          {	
+            "id": "0-3-1",	
+            "title": "Pressure reduced to MSL",	
+            "url": "http://codes.wmo.int/grib2/codeflag/4.2/0-3-1"	
+          }
+        ],	
+        "scheme": "http://codes.wmo.int/grib2/codeflag/4.2"
+      },
+      {	
+        "concepts": [
+          {	
+            "id": "16203",	
+            "title": "Temperature",	
+            "url": "https://vocab.nerc.ac.uk/standard_name/air_temperature/"	
+          },
+          {	
+            "id": "15201",	
+            "title": "Wind (u)",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/eastward_wind/"	
+          },
+          {	
+            "id": "15202",	
+            "title": "Wind (v)",	
+            "url": "https://vocab.nerc.ac.uk/standard_name/northward_wind/"	
+          },
+          {	
+            "id": "16222",	
+            "title": "MSLP",	
+            "url": "https://vocab.nerc.ac.uk/standard_name/air_pressure_at_sea_level/"	
+          }
+        ],
+        "scheme": "https://vocab.nerc.ac.uk/standard_name"
+      }
+    ],	
+    "created": "2025-09-25T15:00:00Z",
+    "rights": "British Crown copyright 2023-2025, the Met Office.",
+    "metoffice:dataLineage": {
+            "description" : "Generated from the NCDS Global Model at 10 km resolution, then downscaled to 17 km and converted to GRIB1 using the ADOG system."
+        },	
+    "type": "dataset",
+    "formats": [
+     {
+      "name":"grib1",
+      "mediaType":"application/grib",
+      "version": "1"
+     }
+    ],
+    "modelDetails": [
+      {
+        "modelName": "global",
+        "modelSource": "CDI",
+        "modelRunFrequency": "2 per day",
+        "modelOutputFormat": "GRIB1"
+      }
+    ],
+    "publicationScope": ["internal"]
+  },	
+  "links": [
+    {	
+      "rel": "related",	
+      "href": "https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting",	
+      "type": "text/html",	
+      "title": "Documentation"	
+    },
+    {
+       "href": "https://creativecommons.org/licenses/by/4.0/",
+       "type": "text/html",
+       "rel": "license",
+       "title": "CC BY 4.0 Deed | Attribution 4.0 International | Creative Commons"
+    }
+  ]	
+}	

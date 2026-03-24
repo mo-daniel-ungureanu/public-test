@@ -1,0 +1,291 @@
+{	
+  "id": "urn:md:uk-metoffice:weather.marine.forecast.marine_surge_forecast",	
+  "type": "Feature",
+  "conformsTo": [	
+    ""	
+  ],  
+  "geometry": {
+      "type": "MultiPoint",
+  "coordinates": [
+    [-2.40, 56.12], 
+    [-2.42, 56.05], 
+    [-5.00, 55.66],
+    [-1.00, 54.75],
+    [0.93,  50.78],
+    [1.83,  52.20],
+    [-3.26, 53.95],
+    [-3.26, 53.95],
+    [-3.22, 51.30]
+  ]
+ },
+ "time": {	
+    "interval": [	
+        "T00Z",	
+        "T23Z"	
+    ],	
+    "resolution": "PT1H"	
+  },
+ "additionalExtents": {
+    "temporal": {
+      "interval": [
+        ["T00Z","PT48H"],
+        ["T06Z","PT48H"],
+        ["T12Z","PT48H"],
+        ["T18Z","PT48H"]
+    ],
+    "resolution": "PT1H",
+    "trs": "http://www.opengis.net/def/trs/ISO-8601",
+    "description": "Forecast runs four times daily at times T00Z, T06Z, T12Z and T18Z. Each run covers 48 hours, with time steps between T00Z and T48Z, and 1-hourly intervals."
+    }
+  },
+  "properties": {
+    "title": "Marine Surge Forecast",	
+    "description": "A marine forecast specifically providing details around expected water levels and current movement for UK coastal locations.",	
+    "contacts": [	
+      {	
+        "identifier": "MO",
+        "name": "Met Office",	
+        "organization": "Met Office",	
+        "phones": [	
+          {	
+            "value": "+443301350000"	
+          }	
+        ],	
+        "emails": [	
+          {	
+            "value": "servicedesk@metoffice.gov.uk"	
+          }	
+        ],	
+        "addresses": [	
+          {	
+            "deliveryPoint": [	
+              "FitzRoy Road"	
+            ],	
+            "name": "Met Office",	
+            "city": "Exeter",	
+            "administrativeArea": "Devon",
+            "postalCode": "EX1 3PB",	
+            "country": "United Kingdom"	
+          }
+        ],	
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://www.metoffice.gov.uk/about-us/contact"	
+          }	
+        ],	
+        "roles": ["host","producer"]
+      },
+      {
+        "identifier": "IAO",
+        "name": "Non-Public Task Data",
+        "organization": "Met Office",
+        "roles": ["IAO"],
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://metoffice.sharepoint.com/:u:/r/sites/EDCommsSite/SitePages/Master-list-of-IAO-Portfolios.aspx?csf=1&web=1&e=bKyrna"	
+          }	
+        ]
+       },
+       {
+         "identifier": "IAG",
+         "name": "IAG Non Public Task",
+         "organization": "Met Office",
+         "roles": ["IAG"],
+         "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://metoffice.sharepoint.com/:u:/r/sites/EDCommsSite/SitePages/Master-list-of-IAO-Portfolios.aspx?csf=1&web=1&e=bKyrna"	
+          }	
+        ]
+       }	
+    ],			
+    "keywords": [	
+       "weather",	
+       "marine",	
+       "forecast",
+       "surge residual level",
+       "tide water level",
+       "total water level"
+     ],	
+    "themes": [	
+      {	
+        "concepts": [	
+          {	
+            "id": "In-use",	
+            "title": "status",
+            "description": "This data is active and available to use.",	
+            "url": "https://reference.metoffice.gov.uk/DataCategories/data-status/In-use"	
+          }	
+        ],	
+        "scheme": "https://reference.metoffice.gov.uk/DataCategories/data-status"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "official",	
+            "title": "securityClassification",
+            "description": "The majority of information that is created, processed, sent or received in the public sector and by partner organisations, which could cause no more than moderate damage if compromised and must be defended against a broad range of threat actors with differing capabilities using nuanced protective controls.",	
+            "url": "https://reference.metoffice.gov.uk/SecurityClassifications/Official"	
+          }	
+        ],	
+        "scheme": "https://reference.metoffice.gov.uk/SecurityClassifications"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "MONonPublicTaskData",	
+            "title": "ropsiClassification",
+            "description": "Environmental Data that is owned by the Met Office and not public task.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification/MONonPublicTaskData"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "Application-ready",	
+            "title": "dataReadiness",
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-readiness"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "PredictionsPostProcessed",	
+            "title": "dataType",
+            "description": "Predictions and Post Processed data are defined as data that infers a full coverage of the state of the physical, chemical and/or biological environment within a given domain and specific context. This includes data assimilation analysis, projections and predictions to different times and post processed outputs derived from predictions. Data are produced using automated production typically in large volumes controlled by algorithms and data science. Prediction data can take many forms, but they always have a Geospatial Feature, Coverage or native grids on creation. They may be packaged differently for supply for customer requirement.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/PredictionsPostProcessed"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "7Years",	
+            "title": "retention",
+            "description": "A data retention period of 7 years. At the end of this period, the data will be reviewed or deleted.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-retention/7Years"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-retention"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "weather",	
+            "title": "Weather",	
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"	
+          }	
+        ],	
+        "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
+      },
+      {	
+        "concepts": [
+          {	
+            "id": "sea_surface_height_above_geoid",	
+            "title": "Total water level",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/sea_surface_height_above_geoid/"	
+          },
+          {	
+            "id": "sea_surface_height",	
+            "title": "Tide water level",	
+            "url": "https://vocab.nerc.ac.uk/standard_name/sea_surface_height/"	
+          }
+        ],
+        "scheme": "https://vocab.nerc.ac.uk/standard_name"
+      }
+    ],	
+    "created": "2025-09-30T15:00:00Z",
+    "rights": "British Crown copyright 2023-2025, the Met Office.",
+    "metoffice:dataLineage": {
+            "description" : "Forecast data generated from the Surge 7km NEMO model and post-processed using the ADOG system"
+        },	
+    "type": "dataset",
+    "formats": [
+      {
+       "name": "csv",
+       "mediaType": "text/csv"
+      },
+      {
+       "name": "text",
+       "mediaType": "text/plain"
+      }
+    ],
+    "modelDetails": [
+      {
+       "modelName": "Surge 7km NEMO",
+       "modelSource": "HPC PP",
+       "modelRunFrequency": "4 per day",
+       "modelOutputFormat": "csv"
+      }
+    ],    
+    "outputFilenames": [
+       "WAVE_surge_[sitename]_ddmmyyyy_hh.csv",
+       "vestasSRG[sitename].txt",
+       "Wales(S/W/N)_Surge.csv",
+       "BB_surge_Tilbury.csv"
+    ],
+    "observationStations": [
+      {
+        "stationName": "TORNESS OFS",
+        "geometry": { "type": "Point", "coordinates": [-2.40, 56.12] }
+      },
+      {
+        "stationName": "TORNESS NRS",
+        "geometry": { "type": "Point", "coordinates": [-2.42, 56.05] }
+      },
+      {
+        "stationName": "HUNTERSTON",
+        "geometry": { "type": "Point", "coordinates": [-5.00, 55.66] }
+      },
+      {
+        "stationName": "HARTLEPOOL",
+        "geometry": { "type": "Point", "coordinates": [-1.00, 54.75] }
+      },
+      {
+        "stationName": "DUNGENESS",
+        "geometry": { "type": "Point", "coordinates": [0.93, 50.78] }
+      },
+      {
+        "stationName": "SIZEWELL",
+        "geometry": { "type": "Point", "coordinates": [1.83, 52.20] }
+      },
+      {
+        "stationName": "HEYSHAM OFFSHORE 1 and 2",
+        "geometry": { "type": "Point", "coordinates": [-3.26, 53.95] }
+      },
+      {
+        "stationName": "HEYSHAM NEARSHORE 1 and 2",
+        "geometry": { "type": "Point", "coordinates": [-3.26, 53.95] }
+      },
+      {
+        "stationName": "HINKLEY POINT",
+        "geometry": { "type": "Point", "coordinates": [-3.22, 51.30] }
+      }
+    ],
+    "publicationScope": ["internal"]
+  },	
+  "links": [
+    {	
+      "rel": "related",	
+      "href": "https://weather.metoffice.gov.uk/specialist-forecasts/coast-and-sea",	
+      "type": "text/html",	
+      "title": "Documentation"	
+    },
+    {
+       "href": "https://creativecommons.org/licenses/by/4.0/",
+       "type": "text/html",
+       "rel": "license",
+       "title": "CC BY 4.0 Deed | Attribution 4.0 International | Creative Commons"
+    }	
+  ]	
+}	

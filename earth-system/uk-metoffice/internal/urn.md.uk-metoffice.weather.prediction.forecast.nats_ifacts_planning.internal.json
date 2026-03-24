@@ -1,0 +1,274 @@
+{	
+  "id": "urn:md:uk-metoffice:weather.prediction.forecast.nats_ifacts_planning",	
+  "type": "Feature",
+  "conformsTo": [	
+    ""	
+  ],  
+  "geometry": {
+      "type": "MultiPoint",
+  "coordinates": [
+    [-5.32, 50.22], 
+    [-6.33, 54.50], 
+    [-1.87, 55.02],
+    [0.32, 50.90],
+    [-1.25, 53.00]
+  ]
+ },
+ "time": {	
+    "interval": [	
+        "T00Z",	
+        "T23Z"	
+    ],	
+    "resolution": "P1D"	
+  },
+ "additionalExtents": {
+    "temporal": {
+      "interval": [
+        ["T00Z","PT72H"]
+    ],
+    "resolution": "P1D",
+    "trs": "http://www.opengis.net/def/trs/ISO-8601",
+    "description": "Single timestep forecast (T+72) from daily run at T00Z."
+   },
+    "vertical": {
+      "interval": [
+        ["200","850"]
+      ],
+      "values": ["200", "300", "500","850"],
+      "vrs": "VERTCS[\"WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PARAMETER[\"Vertical_Shift\",0.0],PARAMETER[\"Direction\",1.0],UNIT[\"hPa\",1.0]],AXIS[\"Up\",UP]",
+      "description": "Pressure levels vary by parameter: Wind speed, and wind direction are at 200, 300 and 500 hPa; Temperature is at 850 hPa."
+    }
+  },
+  "properties": {
+    "title": "NATS iFACTS Planning Data",	
+    "description": "A bespoke service delivered to NATS to support their Interim Future Area Control Tools Support (iFACTS) system. iFACTS is a NATS system that is designed to reduce ATC workload and to increase the overall capacity of the UK ATC system. This service gives NATS access to data at T+72 for planning purposes.  It provides wind and temperature forecast data for 5 locations and 3 levels. It is produced daily.",	
+    "contacts": [	
+      {	
+        "identifier": "MO",
+        "name": "Met Office",	
+        "organization": "Met Office",	
+        "phones": [	
+          {	
+            "value": "+443301350000"	
+          }	
+        ],	
+        "emails": [	
+          {	
+            "value": "servicedesk@metoffice.gov.uk"	
+          }	
+        ],	
+        "addresses": [	
+          {	
+            "deliveryPoint": [	
+              "FitzRoy Road"	
+            ],	
+            "name": "Met Office",	
+            "city": "Exeter",	
+            "administrativeArea": "Devon",
+            "postalCode": "EX1 3PB",	
+            "country": "United Kingdom"	
+          }
+        ],	
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://www.metoffice.gov.uk/about-us/contact"	
+          }	
+        ],	
+        "roles": ["host","producer"]
+      },
+      {
+        "identifier": "IAO",
+        "name": "Predictions and Post Processed",
+        "organization": "Met Office",
+        "roles": ["IAO"],
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://metoffice.sharepoint.com/:u:/r/sites/EDCommsSite/SitePages/Master-list-of-IAO-Portfolios.aspx?csf=1&web=1&e=bKyrna"	
+          }	
+        ]
+       },
+       {
+         "identifier": "IAG",
+         "name": "Level 1 + NWP Data + Obs Space Predictions",
+         "organization": "Met Office",
+         "roles": ["IAG"],
+         "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://metoffice.sharepoint.com/:u:/r/sites/EDCommsSite/SitePages/Master-list-of-IAO-Portfolios.aspx?csf=1&web=1&e=bKyrna"	
+          }	
+        ]
+       }	
+    ],			
+    "keywords": [	
+       "weather",	
+       "prediction",	
+       "forecast",
+       "short-range",
+       "deterministic",
+       "limited area",
+       "wind (u)",
+       "wind (v)",
+       "temperature"
+     ],	
+    "themes": [	
+      {	
+        "concepts": [	
+          {	
+            "id": "In-use",	
+            "title": "status",
+            "description": "This data is active and available to use.",	
+            "url": "https://reference.metoffice.gov.uk/DataCategories/data-status/In-use"	
+          }	
+        ],	
+        "scheme": "https://reference.metoffice.gov.uk/DataCategories/data-status"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "official",	
+            "title": "securityClassification",
+            "description": "The majority of information that is created, processed, sent or received in the public sector and by partner organisations, which could cause no more than moderate damage if compromised and must be defended against a broad range of threat actors with differing capabilities using nuanced protective controls.",	
+            "url": "https://reference.metoffice.gov.uk/SecurityClassifications/Official"	
+          }	
+        ],	
+        "scheme": "https://reference.metoffice.gov.uk/SecurityClassifications"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "OtherHMGPublicTaskData",	
+            "title": "ropsiClassification",
+            "description": "Environmental Data that is not Met Office Public Task but forms part of the Public Task of another UK Government Department and for which the Met Office has been involved in creating that data.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification/OtherHMGPublicTaskData"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "Application-ready",	
+            "title": "dataReadiness",
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-readiness"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "PredictionsPostProcessed",	
+            "title": "dataType",
+            "description": "Predictions and Post Processed data are defined as data that infers a full coverage of the state of the physical, chemical and/or biological environment within a given domain and specific context. This includes data assimilation analysis, projections and predictions to different times and post processed outputs derived from predictions. Data are produced using automated production typically in large volumes controlled by algorithms and data science. Prediction data can take many forms, but they always have a Geospatial Feature, Coverage or native grids on creation. They may be packaged differently for supply for customer requirement.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/PredictionsPostProcessed"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "2Years",	
+            "title": "retention",
+            "description": "A data retention period of 2 years. At the end of this period, the data will be reviewed or deleted.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-retention/2Years"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-retention"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "weather",	
+            "title": "Weather",	
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"	
+          }	
+        ],	
+        "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
+       },
+       {	
+        "concepts": [
+          {	
+            "id": "15201",	
+            "title": "Wind (u)",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed/"	
+          },
+          {	
+            "id": "15202",	
+            "title": "Wind (v)",	
+            "url": "https://vocab.nerc.ac.uk/standard_name/wind_from_direction/"	
+          },
+          {	
+            "id": "16203",	
+            "title": "Temperature",	
+            "url": "https://vocab.nerc.ac.uk/standard_name/air_temperature/"	
+          }
+        ],
+        "scheme": "https://vocab.nerc.ac.uk/standard_name"
+      }
+    ],	
+    "created": "2025-09-29T15:00:00Z",
+    "rights": "British Crown copyright 2023-2025, the Met Office.",
+    "metoffice:dataLineage": {
+            "description" : "Forecast data for T+72 only, generated from the Met Office operational global model and post-processed using the ADOG system."
+        },	
+    "type": "dataset",
+    "formats": [
+     {
+      "name":"text",
+      "mediaType":"text/plain"
+     }
+    ],
+    "modelDetails": [
+      {
+        "modelName": "global",
+        "modelSource": "CDI",
+        "modelRunFrequency": "1 per day",
+        "modelOutputFormat": "Text tables"
+      }
+    ],
+    "observationStations": [
+      {
+        "stationName": "Camborne",
+        "geometry": { "type": "Point", "coordinates": [-5.32, 50.22] }
+      },
+      {
+        "stationName": "Albemarle",
+        "geometry": { "type": "Point", "coordinates": [-1.87, 55.02] }
+      },
+      {
+        "stationName": "Watnall",
+        "geometry": { "type": "Point", "coordinates": [-1.25, 53.00] }
+      },
+      {
+        "stationName": "Castor Bay",
+        "geometry": { "type": "Point", "coordinates": [-6.33, 54.50] }
+      },
+      {
+        "stationName": "Herstmonceux",
+        "geometry": { "type": "Point", "coordinates": [0.32, 50.90] }
+      }
+    ],
+    "publicationScope": ["internal"]
+  },	
+  "links": [
+    {	
+      "rel": "related",	
+      "href": "https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting",	
+      "type": "text/html",	
+      "title": "Documentation"	
+    },
+    {
+       "href": "https://creativecommons.org/licenses/by/4.0/",
+       "type": "text/html",
+       "rel": "license",
+       "title": "CC BY 4.0 Deed | Attribution 4.0 International | Creative Commons"
+    }
+  ]	
+}	

@@ -1,0 +1,476 @@
+{	
+  "id": "urn:md:uk-metoffice:ocean.surface-based-observations.fixed-coastal-stations.navtex_observation_report",	
+  "type": "Feature",
+  "conformsTo": [	
+    ""	
+  ],    
+"geometry": {
+  "type": "MultiPoint",
+  "coordinates": [
+    [4.407,  59.084], 
+    [-1.183, 60.139],
+    [-2.9,   58.954], 
+    [2.067,  60.133], 
+    [-3.088, 58.454], 
+    [-3.322, 57.712], 
+    [-2.204, 57.205], 
+    [-2.861, 56.377], 
+    [-1.6,   55.421], 
+    [0.155,  53.475],
+    [1.124,  52.949], 
+    [0.829,  51.554], 
+    [1.337,  51.346], 
+    [1.800,  51.102], 
+    [-8.245,  51.790], 
+    [10.245, 51.938], 
+    [-4.57,  52.139],
+    [-4.535, 53.252],
+    [-3.056, 53.497], 
+    [-4.631, 54.085], 
+    [-6.224, 54.664], 
+    [-7.333,  55.366], 
+    [-10.00,  54.225],
+    [-3.613, 54.518], 
+    [-5.696, 55.441],
+    [-6.88,  56.5  ], 
+    [-5.809, 57.257], 
+    [-6.318, 58.214], 
+    [-5.60,  57.900], 
+    [-0.00049,51.476], 
+    [-1.835, 50.779], 
+    [-2.598, 49.432], 
+    [-2.196, 49.208], 
+    [-2.454, 50.522], 
+    [-2.00,  50.00],
+    [-4.12,  50.354], 
+    [-5.256, 50.084], 
+    [-6.100, 50.102] 
+  ]
+ },
+ "time": {	
+    "interval": [	
+        "T02Z",	
+        "T23Z"	
+    ],	
+    "resolution": "PT1H"	
+  },
+ "additionalExtents": { 
+    "temporal": {
+      "interval": [
+        ["T04Z","T16Z"],
+        ["T02Z","T18Z"],
+        ["T03Z","T23Z"]
+    ],
+    "values": [
+      "R4/T04Z/PT4H",      
+      "R5/T02Z/PT4H",
+      "R6/T03Z/PT4H"
+    ],
+    "resolution": "PT1H",
+    "trs": "http://www.opengis.net/def/trs/ISO-8601",
+    "description": "15 runs daily: Niton sitelist (04Z, 08Z, 12Z, 16Z), Cullercoast sitelist (02Z, 06Z, 10Z, 14Z, 18Z) and Portpatrick sitelist (03Z, 07Z, 11Z, 15Z, 19Z, 23Z)."
+   }
+  },
+  "properties": {
+    "title": "UK Power Observations Data",	
+    "description": "Report derived from surface-based synoptic observations collected at coastal and marine stations across the UK and Ireland.",	
+    "contacts": [	
+      {	
+        "identifier": "MO",
+        "name": "Met Office",	
+        "organization": "Met Office",	
+        "phones": [	
+          {	
+            "value": "+443301350000"	
+          }	
+        ],	
+        "emails": [	
+          {	
+            "value": "servicedesk@metoffice.gov.uk"	
+          }	
+        ],	
+        "addresses": [	
+          {	
+            "deliveryPoint": [	
+              "FitzRoy Road"	
+            ],	
+            "name": "Met Office",	
+            "city": "Exeter",	
+            "administrativeArea": "Devon",
+            "postalCode": "EX1 3PB",	
+            "country": "United Kingdom"	
+          }
+        ],	
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://www.metoffice.gov.uk/about-us/contact"	
+          }	
+        ],	
+        "roles": ["host","producer"]
+      },
+      {
+        "identifier": "IAO",
+        "name": "Observations",
+        "organization": "Met Office",
+        "roles": ["IAO"],
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://metoffice.sharepoint.com/:u:/r/sites/EDCommsSite/SitePages/Master-list-of-IAO-Portfolios.aspx?csf=1&web=1&e=bKyrna"	
+          }	
+        ]
+       },
+       {
+         "identifier": "IAG",
+         "name": "Land and Marine data",
+         "organization": "Met Office",
+         "roles": ["IAG"],
+         "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://metoffice.sharepoint.com/:u:/r/sites/EDCommsSite/SitePages/Master-list-of-IAO-Portfolios.aspx?csf=1&web=1&e=bKyrna"	
+          }	
+        ]
+       }	
+    ],			
+    "keywords": [	
+       "weather",	
+       "surface-based observations",	
+       "synop",
+       "marine",
+       "surface wind direction",
+       "surface wind speed",
+       "visibility",
+       "pressure (MSL)",
+       "air temperature"
+     ],	
+    "themes": [	
+      {	
+        "concepts": [	
+          {	
+            "id": "In-use",	
+            "title": "status",
+            "description": "This data is active and available to use.",	
+            "url": "https://reference.metoffice.gov.uk/DataCategories/data-status/In-use"	
+          }	
+        ],	
+        "scheme": "https://reference.metoffice.gov.uk/DataCategories/data-status"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "official",	
+            "title": "securityClassification",
+            "description": "The majority of information that is created, processed, sent or received in the public sector and by partner organisations, which could cause no more than moderate damage if compromised and must be defended against a broad range of threat actors with differing capabilities using nuanced protective controls.",	
+            "url": "https://reference.metoffice.gov.uk/SecurityClassifications/Official"	
+          }	
+        ],	
+        "scheme": "https://reference.metoffice.gov.uk/SecurityClassifications"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "OtherHMGPublicTaskData",	
+            "title": "ropsiClassification",
+            "description": "Environmental Data that is not Met Office Public Task but forms part of the of the Public Task of another UK Government Department and for which the Met Office has been involved in creating that data.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification/OtherHMGPublicTaskData"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/ropsi-classification"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "Application-ready",	
+            "title": "dataReadiness",
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-readiness"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "Observations",	
+            "title": "dataType",
+            "description": "Observations data are defined as measurements of the physical, chemical and/or biological environment, measured at a specific time in the past. They may be direct or indirect measurements and may be feature or coverage data. In order to be valid, observations data must carry geospatial and temporal metadata as well as variable values (or equivalent such as pixel values for a faster coverage).",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/Observations"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "2Years",	
+            "title": "retention",
+            "description": "A data retention period of 2 years. At the end of this period, the data will be reviewed or deleted.",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-retention/2Years"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-retention"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "ocean",	
+            "title": "Ocean",	
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/ocean"	
+          }	
+        ],	
+        "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
+       },
+       {	
+        "concepts": [
+          {	
+            "id": "wind_from_direction",	
+            "title": "Surface wind direction",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/wind_from_direction/"	
+          },
+          {	
+            "id": "wind_speed",	
+            "title": "Surface wind speed",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed/"	
+          },
+          {	
+            "id": "air_pressure_at_sea_level",	
+            "title": "Pressure (mean sea level)",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/air_pressure_at_sea_level/"	
+          },
+          {	
+            "id": "air_temperature",	
+            "title": "Air temperature",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"	
+          }
+        ],
+        "scheme": "https://vocab.nerc.ac.uk/standard_name"
+      }
+    ],	
+    "created": "2025-09-22T15:00:00Z",
+    "rights": "British Crown copyright 2023-2025, the Met Office",
+    "metoffice:dataLineage": {
+            "description" : "Synoptic marine observations are received from MetDB, and post-processed using the ADOG system to provide reports for the Maritime Coastguard Agency."
+        },	
+    "type": "dataset",
+    "formats": [
+     {
+      "name":"text",
+      "mediaType":"text/plain"
+     }
+    ],
+    "outputFilenames": [
+      "NCM_list.txt"
+    ],
+    "observationStations": [
+      {
+        "stationName": "SULE SKERRY",
+        "stationId": "3010",
+        "geometry": { "type": "Point", "coordinates": [4.407, 59.084] }
+      },
+      {
+        "stationName": "LERWICK",
+        "stationId": "3005",
+        "geometry": { "type": "Point", "coordinates": [-1.183, 60.139] }
+      },
+      {
+        "stationName": "KIRKWALL",
+        "stationId": "3017",
+        "geometry": { "type": "Point", "coordinates": [-2.9, 58.954] }
+      },
+      {
+        "stationName": "FOULA",
+        "stationId": "3014",
+        "geometry": { "type": "Point", "coordinates": [2.067, 60.133] }
+      },
+      {
+        "stationName": "WICK AIRPORT",
+        "stationId": "3075",
+        "geometry": { "type": "Point", "coordinates": [-3.088, 58.454] }
+      },
+      {
+        "stationName": "LOSSIEMOUTH",
+        "stationId": "3068",
+        "geometry": { "type": "Point", "coordinates": [-3.322, 57.712] }
+      },
+      {
+        "stationName": "DYCE",
+        "stationId": "3091",
+        "geometry": { "type": "Point", "coordinates": [-2.204, 57.205] }
+      },
+      {
+        "stationName": "LEUCHARS",
+        "stationId": "3171",
+        "geometry": { "type": "Point", "coordinates": [-2.861, 56.377] }
+      },
+      {
+        "stationName": "BOULMER",
+        "stationId": "3240",
+        "geometry": { "type": "Point", "coordinates": [-1.6, 55.421] }
+      },
+      {
+        "stationName": "DONNA NOOK",
+        "stationId": "3385",
+        "geometry": { "type": "Point", "coordinates": [0.155, 53.475] }
+      },
+      {
+        "stationName": "WEYBOURNE",
+        "stationId": "3488",
+        "geometry": { "type": "Point", "coordinates": [1.124, 52.949] }
+      },
+      {
+        "stationName": "SHOEBURYNESS",
+        "stationId": "3693",
+        "geometry": { "type": "Point", "coordinates": [0.829, 51.554] }
+      },
+      {
+        "stationName": "MANSTON",
+        "stationId": "3797",
+        "geometry": { "type": "Point", "coordinates": [1.337, 51.346] }
+      },
+      {
+        "stationName": "SANDETTIE",
+        "stationId": "62304",
+        "geometry": { "type": "Point", "coordinates": [1.8, 51.102] }
+      },
+      {
+        "stationName": "ROCHES POINT",
+        "stationId": "3952",
+        "geometry": { "type": "Point", "coordinates": [-8.245, 51.79] }
+      },
+      {
+        "stationName": "VALENTIA",
+        "stationId": "3953",
+        "geometry": { "type": "Point", "coordinates": [10.245, 51.938] }
+      },
+      {
+        "stationName": "ABERPORTH",
+        "stationId": "62301",
+        "geometry": { "type": "Point", "coordinates": [-4.57, 52.139] }
+      },
+      {
+        "stationName": "VALLEY",
+        "stationId": "3302",
+        "geometry": { "type": "Point", "coordinates": [-4.535, 53.252] }
+      },
+      {
+        "stationName": "CROSBY",
+        "stationId": "3316",
+        "geometry": { "type": "Point", "coordinates": [-3.056, 53.497] }
+      },
+      {
+        "stationName": "RONALDSWAY",
+        "stationId": "3204",
+        "geometry": { "type": "Point", "coordinates": [-4.631, 54.085] }
+      },
+      {
+        "stationName": "ALDERGROVE",
+        "stationId": "3917",
+        "geometry": { "type": "Point", "coordinates": [-6.224, 54.664] }
+      },
+      {
+        "stationName": "MALIN HEAD",
+        "stationId": "3980",
+        "geometry": { "type": "Point", "coordinates": [-7.333, 55.366] }
+      },
+      {
+        "stationName": "BELMULLET",
+        "stationId": "3976",
+        "geometry": { "type": "Point", "coordinates": [-10, 54.225] }
+      },
+      {
+        "stationName": "ST BEES HEAD",
+        "stationId": "3210",
+        "geometry": { "type": "Point", "coordinates": [-3.613, 54.518] }
+      },
+      {
+        "stationName": "MACHRIHANISH",
+        "stationId": "3111",
+        "geometry": { "type": "Point", "coordinates": [-5.696, 55.441] }
+      },
+      {
+        "stationName": "TIREE",
+        "stationId": "3100",
+        "geometry": { "type": "Point", "coordinates": [-6.88, 56.5] }
+      },
+      {
+        "stationName": "SKYE: LUSA",
+        "stationId": "3037",
+        "geometry": { "type": "Point", "coordinates": [-5.809, 57.257] }
+      },
+      {
+        "stationName": "STORNOWAY",
+        "stationId": "3026",
+        "geometry": { "type": "Point", "coordinates": [-6.318, 58.214] }
+      },
+      {
+        "stationName": "NORTH RONA",
+        "stationId": "3011",
+        "geometry": { "type": "Point", "coordinates": [-5.6, 57.9] }
+      },
+      {
+        "stationName": "GREENWICH L/V",
+        "stationId": "62305",
+        "geometry": { "type": "Point", "coordinates": [-0.00049, 51.476] }
+      },
+      {
+        "stationName": "HURN",
+        "stationId": "3862",
+        "geometry": { "type": "Point", "coordinates": [-1.835, 50.779] }
+      },
+      {
+        "stationName": "GUERNSEY: A/P",
+        "stationId": "3894",
+        "geometry": { "type": "Point", "coordinates": [-2.598, 49.432] }
+      },
+      {
+        "stationName": "JERSEY: A/P",
+        "stationId": "3895",
+        "geometry": { "type": "Point", "coordinates": [-2.196, 49.208] }
+      },
+      {
+        "stationName": "PORTLAND",
+        "stationId": "3857",
+        "geometry": { "type": "Point", "coordinates": [-2.454, 50.522] }
+      },
+      {
+        "stationName": "CHANNEL L/V",
+        "stationId": "62103",
+        "geometry": { "type": "Point", "coordinates": [-2.00, 50.00] }
+      },
+      {
+        "stationName": "PLYMOUTH",
+        "stationId": "3827",
+        "geometry": { "type": "Point", "coordinates": [-4.12, 50.354] }
+      },
+      {
+        "stationName": "CULDROSE",
+        "stationId": "3809",
+        "geometry": { "type": "Point", "coordinates": [-5.256, 50.084] }
+      },
+      {
+        "stationName": "SEVEN STONES",
+        "stationId": "62107",
+        "geometry": { "type": "Point", "coordinates": [-6.100, 50.102] }
+      }
+    ],
+    "publicationScope": ["internal"]
+  },	
+  "links": [
+    {	
+      "rel": "related",	
+      "href": "https://weather.metoffice.gov.uk/specialist-forecasts/coast-and-sea/observations",	
+      "type": "text/html",	
+      "title": "Documentation"	
+    },
+    {
+       "href": "https://creativecommons.org/licenses/by/4.0/",
+       "type": "text/html",
+       "rel": "license",
+       "title": "CC BY 4.0 Deed | Attribution 4.0 International | Creative Commons"
+    }
+  ]	
+}	

@@ -1,0 +1,249 @@
+{	
+  "id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.sonde-ascent",	
+  "type": "Feature",
+  "conformsTo": [	
+    "http://wis.wmo.int/spec/wcmp/2/conf/core"
+  ],  
+ "geometry": {
+  "type": "MultiPoint",
+  "coordinates": [
+    [-1.183, 60.139],
+    [-1.188, 55.02],
+    [-1.25167, 53.00556],
+    [-5.327, 50.218],
+    [0.318,  50.89],
+    [-6.3429, 54.5020],
+    [-1.804, 51.201],
+    [-4.571, 52.139],
+    [-7.397, 57.358]
+  ]
+ },
+ "time": {	
+    "interval": [	
+        "T00Z",	
+        "T23Z"	
+    ],	
+    "resolution": "PT6H"	
+  },  
+  "additionalExtents": {
+    "vertical": {
+      "interval": [
+        ["1000","100"]
+      ],
+      "values": ["1000","925", "850", "700","500","400","300","250","200","150","100"],
+      "vrs": "VERTCS[\"WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PARAMETER[\"Vertical_Shift\",0.0],PARAMETER[\"Direction\",1.0],UNIT[\"hPa\",1.0]],AXIS[\"Up\",UP]",
+      "description": "Pressure levels up to 100 hPa."
+    }
+  },
+  "properties": {
+    "title": "UK Radiosonde ascent data",	
+    "description": "High resolution radiosonde measurements of temperature, pressure, humidity, and wind speed/direction collected during the ascent phase.",	
+    "contacts": [	
+      {	
+        "identifier": "MO",
+        "name": "Met Office",	
+        "organization": "Met Office",	
+        "phones": [	
+          {	
+            "value": "+443301350000"	
+          }	
+        ],	
+        "emails": [	
+          {	
+            "value": "servicedesk@metoffice.gov.uk"	
+          }	
+        ],	
+        "addresses": [	
+          {	
+            "deliveryPoint": [	
+              "FitzRoy Road"	
+            ],	
+            "name": "Met Office",	
+            "city": "Exeter",	
+            "administrativeArea": "Devon",
+            "postalCode": "EX1 3PB",	
+            "country": "United Kingdom"	
+          }
+        ],	
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://www.metoffice.gov.uk/about-us/contact"	
+          }	
+        ],	
+        "roles": ["host","producer"]
+      }
+    ],			
+    "keywords": [	
+       "weather",	
+       "surface-based observations",	
+       "radiosonde",
+       "sonde ascent",
+       "upper air observations",
+       "temperature",
+       "pressure",
+       "humidity",
+       "wind speed",
+       "wind direction"	
+     ],
+    "themes": [	
+      {	
+        "concepts": [	
+          {	
+            "id": "Application-ready",	
+            "title": "dataReadiness",
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-readiness"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "Observations",	
+            "title": "dataType",
+            "description": "Observations data are defined as measurements of the physical, chemical and/or biological environment, measured at a specific time in the past.  They may be direct or indirect measurements and may be feature or coverage data.  In order to be valid, observations data must carry geospatial and temporal metadata as well as variable values (or equivalent such as pixel values for a faster coverage).",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/Observations"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "weather",	
+            "title": "Weather",	
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"	
+          }	
+        ],	
+        "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
+       },
+      {	
+        "concepts": [	
+          {	
+            "id": "12",	
+            "title": "BUFR/CREX Temperature",	
+            "url": "http://codes.wmo.int/bufr4/b/12"	
+          },
+          {	
+            "id": "11",	
+            "title": "BUFR/CREX Wind and turbulence",	
+            "url": "http://codes.wmo.int/bufr4/b/11"
+          },	
+          {	
+            "id": "2",	
+            "title": "Mixing ratio",	
+            "url": "http://codes.wmo.int/bufr4/b/13/_002"	
+          }
+	
+        ],	
+        "scheme": "http://codes.wmo.int/bufr4/b"
+      },
+      {	
+        "concepts": [
+          {	
+            "id": "air_temperature",	
+            "title": "Air temperature",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/air_temperature/"	
+          },	
+          {	
+            "id": "wind_speed",	
+            "title": "Wind Speed",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/wind_speed/"	
+          },
+          {	
+            "id": "wind_to_direction",	
+            "title": "Wind to diection",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/wind_to_direction/"	
+          },	
+          {	
+            "id": "humidity_mixing_ratio",	
+            "title": "Humidity mixing ratio",	
+            "url": "http://vocab.nerc.ac.uk/standard_name/humidity_mixing_ratio/"	
+          }
+        ],	
+        "scheme": "https://vocab.nerc.ac.uk/standard_name"
+      }	
+    ],	
+    "created": "2025-08-12T15:00:00Z",
+    "updated": "2025-08-12T15:00:00Z",
+    "wmo:dataPolicy": "core",
+    "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021)).",
+    "type": "dataset",
+    "formats": [
+     {
+      "name":"bufr",
+      "mediaType":"application/bufr",
+      "version": 4
+     }
+    ],
+    "status": {
+      "id": "operational",
+      "title": "dataset is in 24/7 operation",
+      "url": "https://www.metoffice.gov.uk/services/data/business-data/observational"
+    },
+    "observationStations": [
+      {
+        "stationName": "LERWICK",
+        "stationId": "03005",
+        "geometry": { "type": "Point", "coordinates": [-1.183, 60.139] }
+      },
+      {
+        "stationName": "ALBEMARLE",
+        "stationId": "03238",
+        "geometry": { "type": "Point", "coordinates": [-1.188, 55.02] }
+      },
+      {
+        "stationName": "WATNALL",
+        "stationId": "03354",
+        "geometry": { "type": "Point", "coordinates": [-1.25167, 53.00556] }
+      },
+      {
+        "stationName": "CAMBORNE",
+        "stationId": "03808",
+        "geometry": { "type": "Point", "coordinates": [-5.327, 50.218] }
+      },
+      {
+        "stationName": "HERSTMONCEUX",
+        "stationId": "03882",
+        "geometry": { "type": "Point", "coordinates": [0.318, 50.89] }
+      },
+      {
+        "stationName": "CASTOR BAY",
+        "stationId": "03918",
+        "geometry": { "type": "Point", "coordinates": [-6.3429, 54.5020] }
+      },
+       {
+        "stationName": "LARKHILL",
+        "stationId": "03743",
+        "geometry": { "type": "Point", "coordinates": [-1.804, 51.201] }
+      },
+      {
+        "stationName": "ABERPORTH",
+        "stationId": "03502",
+        "geometry": { "type": "Point", "coordinates": [-4.571, 52.139] }
+      },
+      {
+        "stationName": "SOUTH UIST",
+        "stationId": "03023",
+        "geometry": { "type": "Point", "coordinates": [-7.397, 57.358] }
+      }
+    ]
+  },	
+  "links": [
+    {	
+      "rel": "related",	
+      "href": "https://en.wikipedia.org/wiki/Radiosonde",	
+      "type": "text/html",	
+      "title": "Documentation"	
+    },
+    {	
+      "rel": "items",	
+      "href": "mqtts://broker.metoffice.gov.uk",	
+      "channel": "origin/a/wis2/uk-metoffice/data/core/weather/surface-based-observations",	
+      "type": "application/geo+json",	
+      "title": "Data notifications broker"	
+    }
+  ]	
+}	

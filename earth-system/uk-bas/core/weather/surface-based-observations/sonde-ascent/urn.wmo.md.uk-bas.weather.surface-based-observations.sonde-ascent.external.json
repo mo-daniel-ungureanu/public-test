@@ -1,0 +1,222 @@
+{	
+  "id": "urn:wmo:md:uk-bas:weather.surface-based-observations.sonde-ascent",	
+  "type": "Feature",
+  "conformsTo": [	
+    "http://wis.wmo.int/spec/wcmp/2/conf/core"	
+  ],  
+ "geometry": {
+  "type": "MultiPoint",
+  "coordinates": [
+    [-68.125028, -67.568783], 
+    [-26.5667,-75.6]
+  ]
+ },
+ "time": {	
+    "interval": [	
+        "T00Z",	
+        "T23Z"	
+    ],	
+    "resolution": "P1D"	
+  },
+  "additionalExtents": {
+    "vertical": {
+      "interval": [
+        ["1000","100"]
+      ],
+      "values": ["1000","925", "850", "700","500","400","300","250","200","150","100"],
+      "vrs": "VERTCS[\"WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137.0,298.257223563]],PARAMETER[\"Vertical_Shift\",0.0],PARAMETER[\"Direction\",1.0],UNIT[\"hPa\",1.0]],AXIS[\"Up\",UP]",
+      "description": "Pressure levels up to 100 hPa."
+    },		
+    "temporal": {
+      "interval": [["T12Z","T12Z"]],
+      "trs": "http://www.opengis.net/def/trs/ISO-8601",
+      "description": "Runs once a day. Rothera: Once a day at T12Z, Mon-Fri only; Halley: Once a day at T12Z, Antarctic summer only (approx. end of Nov to end of Jan)."	
+   }
+  },
+  "properties": {
+    "title": "Radiosonde ascent data from Antarctica",
+    "description": "High resolution radiosonde measurements of temperature, pressure, humidity, and wind speed/direction collected during the ascent phase. From stations operated by BAS in collaboration with the Met Office.",	
+    "contacts": [	
+      {	
+        "identifier": "MO",
+        "name": "Met Office",	
+        "organization": "Met Office",	
+        "phones": [	
+          {	
+            "value": "+443301350000"	
+          }	
+        ],	
+        "emails": [	
+          {	
+            "value": "servicedesk@metoffice.gov.uk"	
+          }	
+        ],	
+        "addresses": [	
+          {	
+            "deliveryPoint": [	
+              "FitzRoy Road"	
+            ],	
+            "name": "Met Office",	
+            "city": "Exeter",	
+            "administrativeArea": "Devon",
+            "postalCode": "EX1 3PB",	
+            "country": "United Kingdom"	
+          }
+        ],	
+        "links": [	
+          {	
+            "rel": "canonical",	
+            "type": "text/html",	
+            "href": "https://www.metoffice.gov.uk/about-us/contact"	
+          }	
+        ],	
+        "roles": ["host","producer"]
+      }
+    ],			
+    "keywords": [	
+       "weather",	
+       "surface-based observations",	
+       "radiosonde",
+       "sonde ascent",
+       "upper air observations",
+       "temperature",
+       "pressure",
+       "humidity",
+       "wind speed",
+       "wind direction"	
+     ],
+    "themes": [	
+      {	
+        "concepts": [	
+          {	
+            "id": "Application-ready",	
+            "title": "dataReadiness",
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-readiness"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "Observations",	
+            "title": "dataType",
+            "description": "Observations data are defined as measurements of the physical, chemical and/or biological environment, measured at a specific time in the past.  They may be direct or indirect measurements and may be feature or coverage data.  In order to be valid, observations data must carry geospatial and temporal metadata as well as variable values (or equivalent such as pixel values for a faster coverage).",	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/Observations"	
+          }	
+        ],	
+        "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
+      },
+      {	
+        "concepts": [	
+          {	
+            "id": "weather",	
+            "title": "Weather",	
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"	
+          }	
+        ],	
+        "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
+       },
+       {	
+        "concepts": [	
+          {	
+            "id": "12-001",	
+            "title": "Temperature",	
+            "url": "http://codes.wmo.int/bufr4/b/12/001"	
+          },
+          {	
+            "id": "07-004",	
+            "title": "Pressure",	
+            "url": "http://codes.wmo.int/bufr4/b/07/004"	
+          },
+          {	
+            "id": "07-009",	
+            "title": "Geopotential height",	
+            "url": "http://codes.wmo.int/bufr4/b/07/009"	
+          },
+          {	
+            "id": "12-003",	
+            "title": "Dewpoint temperature",	
+            "url": "http://codes.wmo.int/bufr4/b/12/003"	
+          },
+          {	
+            "id": "11-001",	
+            "title": "Wind direction",	
+            "url": "http://codes.wmo.int/bufr4/b/11/001"
+          },	
+          {	
+            "id": "11-001",	
+            "title": "Wind speed",	
+            "url": "http://codes.wmo.int/bufr4/b/11/002"
+          },
+          {	
+            "id": "13-003",	
+            "title": "Relative humidity",	
+            "url": "http://codes.wmo.int/bufr4/b/13/003"	
+          }
+	
+        ],	
+        "scheme": "http://codes.wmo.int/bufr4/b"
+      }	
+    ],	
+    "created": "2025-08-12T15:00:00Z",
+    "updated": "2026-03-16T13:13:00Z",
+    "wmo:dataPolicy": "core",
+    "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021)).",
+    "type": "dataset",
+    "formats": [
+     {
+      "name":"bufr",
+      "mediaType":"application/bufr",
+      "version": 4
+     }
+    ],
+    "status": {
+      "id": "operational",
+      "title": "dataset is in 24/7 operation",
+      "url": "https://www.metoffice.gov.uk/services/data/business-data/observational"
+    },
+    "observationStations": [
+      {
+        "stationName": "ROTHERA",
+        "stationId": "89062",
+        "geometry": { "type": "Point", "coordinates": [-68.125028, -67.568783] }
+      },
+      {
+        "stationName": "HALLEY",
+        "stationId": "89022",
+        "geometry": { "type": "Point", "coordinates": [-26.5667,-75.6] }
+      }
+    ]
+  },		
+  "links": [
+    {	
+      "rel": "related",	
+      "href": "https://en.wikipedia.org/wiki/Radiosonde",	
+      "type": "text/html",	
+      "title": "Documentation"	
+    },	
+    {	
+      "rel": "items",	
+      "href": "mqtts://broker.metoffice.gov.uk",	
+      "channel": "origin/a/wis2/uk-bas/data/core/weather/surface-based-observations",	
+      "type": "application/geo+json",	
+      "title": "Data notifications broker",
+      "properties": {
+                "diagnostic": {
+                    "type": "string",
+                    "title": "Diagnostic",
+                    "enum": ["Temperature","Dewpoint temperature","Pressure","Geopotential height","Wind direction","Wind speed","Relative humidity"],
+                    "description": "The diagnostic filter parameter is the title property of the concept object within the themes array, where the scheme is 'http://codes.wmo.int/bufr4/b'."
+                },
+                "station_id": {
+                    "type": "string",
+                    "title": "Station Id",
+                    "enum": ["89062","89022"]
+                }
+       }	
+    }
+  ]	
+
+}	
+
