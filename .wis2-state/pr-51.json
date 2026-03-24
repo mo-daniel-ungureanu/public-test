@@ -1,0 +1,39 @@
+[
+  {
+    "rel_path": "earth-system/eu-eumetnet-profiles/core/weather/surface-based-observations/radar-wind-profiler/urn.wmo.md.eu-eumetnet-profiles.weather.surface-based-observations.radar-wind-profiler.external.json",
+    "status": "MOD",
+    "rel": "update",
+    "topic": "origin/a/wis2/eu-eumetnet-profiles/metadata",
+    "notification": {
+      "id": "84c3e989-31f1-4477-b640-9b9d57a364db",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "pubtime": "2026-03-24T13:09:09Z",
+        "data_id": "urn:wmo:md:eu-eumetnet-profiles:weather.surface-based-observations.radar-wind-profiler",
+        "metadata_id": "urn:wmo:md:eu-eumetnet-profiles:weather.surface-based-observations.radar-wind-profiler",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "zMfl4a/MyU+H7sqwWJbrnjUFJRu0kevCicCRomSeA6jDexRqHH2GFoBNrNjSt9cUeTqUrPPZiP+bliE52E2WNg=="
+        },
+        "datetime": "2026-02-05T11:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/eu-eumetnet-profiles/core/weather/surface-based-observations/radar-wind-profiler/urn.wmo.md.eu-eumetnet-profiles.weather.surface-based-observations.radar-wind-profiler.external.json",
+          "rel": "update",
+          "type": "application/geo+json",
+          "length": 5803
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  }
+]
