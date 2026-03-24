@@ -1,0 +1,65 @@
+[
+  {
+    "rel_path": "earth-system/uk-metoffice/core/weather/surface-based-observations/upper-air-observations/tamdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.upper-air-observations.tamdar.external.json",
+    "status": "DEL",
+    "rel": "deletion",
+    "topic": "origin/a/wis2/uk-metoffice/metadata",
+    "notification": {
+      "id": "178a8619-2bda-4c04-8b33-168594c41f39",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180,
+              90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              180,
+              -90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              -180,
+              90
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pubtime": "2026-03-24T11:58:18Z",
+        "data_id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.upper-air-observations.tamdar",
+        "metadata_id": "urn:wmo:md:uk-metoffice:weather.surface-based-observations.upper-air-observations.tamdar",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "YPLCp24ZmIriUcABmn21wvtedeZOAnFdueF7oKSIlWkRo//I26A1CCWNPhBtBd9gDr2vid1GBhEq7LdCx/b7Xw=="
+        },
+        "datetime": "2025-05-06T14:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/uk-metoffice/core/weather/surface-based-observations/upper-air-observations/tamdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.upper-air-observations.tamdar.external.json",
+          "rel": "deletion",
+          "type": "application/geo+json",
+          "length": 5982
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  }
+]
