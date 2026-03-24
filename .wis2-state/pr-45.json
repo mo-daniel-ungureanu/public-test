@@ -1,0 +1,65 @@
+[
+  {
+    "rel_path": "earth-system/uk-metoffice/core/ocean/surface-based-observations/drifting-ocean-profilers/urn.wmo.md.uk-metoffice.ocean.surface-based-observations.drifting-ocean-profilers.uk_argo_float.external.json",
+    "status": "MOD",
+    "rel": "update",
+    "topic": "origin/a/wis2/uk-metoffice/metadata",
+    "notification": {
+      "id": "dd66b9bb-0122-4d83-8747-b80042db7d95",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180,
+              90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              180,
+              -90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              -180,
+              90
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pubtime": "2026-03-24T11:44:26Z",
+        "data_id": "urn:wmo:md:uk-metoffice:ocean.surface-based-observations.drifting-ocean-profilers.uk_argo_float",
+        "metadata_id": "urn:wmo:md:uk-metoffice:ocean.surface-based-observations.drifting-ocean-profilers.uk_argo_float",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "DWhDjSXKODnE18ZDa9CVPy/1Vgf+HCDg+CHxPWv5f7woM+8YUIOP0OqUS8RuUGOpyT6dFCkTOk7JH1w1kmExEQ=="
+        },
+        "datetime": "2025-03-06T14:30:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/uk-metoffice/core/ocean/surface-based-observations/drifting-ocean-profilers/urn.wmo.md.uk-metoffice.ocean.surface-based-observations.drifting-ocean-profilers.uk_argo_float.external.json",
+          "rel": "update",
+          "type": "application/geo+json",
+          "length": 5490
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  }
+]
