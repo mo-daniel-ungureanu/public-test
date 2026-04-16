@@ -1,0 +1,156 @@
+[
+  {
+    "rel_path": "earth-system/eu-eumetnet-gnss/core/weather/surface-based-observations/gnss-total-delay/urn.wmo.md.eu-eumetnet-gnss.weather.surface-based-observations.gnss.external.json",
+    "status": "ADD",
+    "rel": "canonical",
+    "topic": "origin/a/wis2/eu-eumetnet-gnss/metadata",
+    "notification": {
+      "id": "2f93bf0b-4b07-42d7-b9af-071eb3390585",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "pubtime": "2026-04-16T15:17:04Z",
+        "data_id": "urn:wmo:md:eu-eumetnet-gnss:weather.surface-based-observations.gnss-total-delay",
+        "metadata_id": "urn:wmo:md:eu-eumetnet-gnss:weather.surface-based-observations.gnss-total-delay",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "dJO9mJgagplSb10N1V6TNz9ZJXimiWA+z2MT/umku8B+pjD13e+qu5om0mQVwwR4kbJ4/pBYw2pvQQ6s5susYA=="
+        },
+        "datetime": "2025-05-06T14:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/eu-eumetnet-gnss/core/weather/surface-based-observations/gnss-total-delay/urn.wmo.md.eu-eumetnet-gnss.weather.surface-based-observations.gnss.external.json",
+          "rel": "canonical",
+          "type": "application/json",
+          "length": 5015
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  },
+  {
+    "rel_path": "earth-system/eu-eumetnet-amdar/core/weather/surface-based-observations/upper-air-observations/amdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.amdar.external.json",
+    "status": "MOD",
+    "rel": "update",
+    "topic": "origin/a/wis2/eu-eumetnet-amdar/metadata",
+    "notification": {
+      "id": "7ec84fdf-c8d6-4326-9302-7f7572345e9d",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "pubtime": "2026-04-16T15:17:04Z",
+        "data_id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.amdar",
+        "metadata_id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.amdar",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "hELtLCo1UDkGeDNbA5G+gym2JgYIyHt/gqD79UERndTql4gkbKWeQ/4TK1oB3J1b9EWe0JFSsSjQ2JHkaDBGvw=="
+        },
+        "datetime": "2026-02-04T14:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/eu-eumetnet-amdar/core/weather/surface-based-observations/upper-air-observations/amdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.amdar.external.json",
+          "rel": "update",
+          "type": "application/json",
+          "length": 5767
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  },
+  {
+    "rel_path": "earth-system/eu-eumetnet-amdar/core/weather/surface-based-observations/upper-air-observations/tamdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.tamdar.external.json",
+    "status": "MOD",
+    "rel": "update",
+    "topic": "origin/a/wis2/eu-eumetnet-amdar/metadata",
+    "notification": {
+      "id": "064824c9-c2d0-4a1b-adbe-a133726c60aa",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.146255135536194,
+          46.223296618227444
+        ]
+      },
+      "properties": {
+        "pubtime": "2026-04-16T15:17:04Z",
+        "data_id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.tamdar",
+        "metadata_id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.tamdar",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "lxPj9HD6kLzgNrCoOzX2CrzZ5ZfI9lKTdhfMURhWE5pYeomLUYrv4CJcu9Q9edeGBf4EB3m6JcX7lGN0IyeZVQ=="
+        },
+        "datetime": "2025-05-06T14:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/eu-eumetnet-amdar/core/weather/surface-based-observations/upper-air-observations/tamdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.tamdar.external.json",
+          "rel": "update",
+          "type": "application/json",
+          "length": 5653
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  },
+  {
+    "rel_path": "earth-system/eu-eumetnet-gnss/core/weather/surface-based-observations/gnss-total-delay/urn.wmo.md.eu-eumetnet-gnss.weather.surface-based-observations.gnss-total-delay.external.json",
+    "status": "DEL",
+    "rel": "deletion",
+    "topic": "origin/a/wis2/eu-eumetnet-gnss/metadata",
+    "notification": {
+      "id": "4f784557-9b24-4ae2-a242-f2e524a0314e",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "pubtime": "2026-04-16T15:17:04Z",
+        "data_id": "urn:wmo:md:eu-eumetnet-gnss:weather.surface-based-observations.gnss-total-delay",
+        "metadata_id": "urn:wmo:md:eu-eumetnet-gnss:weather.surface-based-observations.gnss-total-delay",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "dJO9mJgagplSb10N1V6TNz9ZJXimiWA+z2MT/umku8B+pjD13e+qu5om0mQVwwR4kbJ4/pBYw2pvQQ6s5susYA=="
+        },
+        "datetime": "2025-05-06T14:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/eu-eumetnet-gnss/core/weather/surface-based-observations/gnss-total-delay/urn.wmo.md.eu-eumetnet-gnss.weather.surface-based-observations.gnss-total-delay.external.json",
+          "rel": "deletion",
+          "type": "application/json",
+          "length": 5015
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  }
+]
