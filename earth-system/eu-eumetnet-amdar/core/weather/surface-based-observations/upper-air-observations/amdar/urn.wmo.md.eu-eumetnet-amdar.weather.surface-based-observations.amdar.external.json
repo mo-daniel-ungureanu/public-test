@@ -1,181 +1,189 @@
-{	
-  "id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.amdar",	
+{
+  "id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.amdar",
   "type": "Feature",
-  "conformsTo": [	
-    "http://wis.wmo.int/spec/wcmp/2/conf/core"	
-  ],  
+  "conformsTo": [
+    "http://wis.wmo.int/spec/wcmp/2/conf/core"
+  ],
   "geometry": {
-      "type": "Polygon",
-      "coordinates": [[             
-        [-180, 90],
-        [180,  90],
-        [180, -90],
-        [-180,-90],
-        [-180, 90]
-     ]]
- },
- "time": {	
-    "interval": [	
-        "T00Z",	
-        "T23Z"	
-    ],	
-    "resolution": "PT1H"	
-  },  
+    "type": "MultiPoint",
+    "coordinates": [
+      [
+        -68.125028,
+        -67.568783
+      ],
+      [
+        -26.5667,
+        -75.6
+      ]
+    ]
+  },
+  "time": {
+    "interval": [
+      "T00Z",
+      "T23Z"
+    ],
+    "resolution": "PT1H"
+  },
   "properties": {
-    "title": "Aircraft Meteorological Data Relay",	
+    "title": "Aircraft Meteorological Data Relay",
     "alias": "AMDAR data",
-    "description": "Meteorological observations (temperature, wind and humidity) from civil aircraft. In-flight measurements and derived airport vertical profiles.",	
-    "contacts": [	
-      {	
+    "description": "Meteorological observations (temperature, wind and humidity) from civil aircraft. In-flight measurements and derived airport vertical profiles.",
+    "contacts": [
+      {
         "identifier": "MO",
-        "name": "Met Office",	
-        "organization": "Met Office",	
-        "phones": [	
-          {	
-            "value": "+443301350000"	
-          }	
-        ],	
-        "emails": [	
-          {	
-            "value": "servicedesk@metoffice.gov.uk"	
-          }	
-        ],	
-        "addresses": [	
-          {	
-            "deliveryPoint": [	
-              "FitzRoy Road"	
-            ],	
-            "name": "Met Office",	
-            "city": "Exeter",	
-            "administrativeArea": "Devon",
-            "postalCode": "EX1 3PB",	
-            "country": "United Kingdom"	
+        "name": "Met Office",
+        "organization": "Met Office",
+        "phones": [
+          {
+            "value": "+443301350000"
           }
-        ],	
-        "links": [	
-          {	
-            "rel": "canonical",	
-            "type": "text/html",	
-            "href": "https://www.metoffice.gov.uk/about-us/contact"	
-          }	
-        ],	
-        "roles": ["host","producer"]
+        ],
+        "emails": [
+          {
+            "value": "servicedesk@metoffice.gov.uk"
+          }
+        ],
+        "addresses": [
+          {
+            "deliveryPoint": [
+              "FitzRoy Road"
+            ],
+            "name": "Met Office",
+            "city": "Exeter",
+            "administrativeArea": "Devon",
+            "postalCode": "EX1 3PB",
+            "country": "United Kingdom"
+          }
+        ],
+        "links": [
+          {
+            "rel": "canonical",
+            "type": "text/html",
+            "href": "https://www.metoffice.gov.uk/about-us/contact"
+          }
+        ],
+        "roles": [
+          "host",
+          "producer"
+        ]
       }
-    ],			
-    "keywords": [	
-       "weather",	
-       "aircraft-based observations",	
-       "amdar",
-       "temperature",
-       "wind",
-       "humidity"
-     ],	
-    "themes": [	
-      {	
-        "concepts": [	
-          {	
-            "id": "Application-ready",	
+    ],
+    "keywords": [
+      "weather",
+      "aircraft-based observations",
+      "amdar",
+      "temperature",
+      "wind",
+      "humidity"
+    ],
+    "themes": [
+      {
+        "concepts": [
+          {
+            "id": "Application-ready",
             "title": "dataReadiness",
-            "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"	
-          }	
-        ],	
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-readiness/Application-ready"
+          }
+        ],
         "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-readiness"
       },
-      {	
-        "concepts": [	
-          {	
-            "id": "Observations",	
+      {
+        "concepts": [
+          {
+            "id": "Observations",
             "title": "dataType",
-            "description": "Observations data are defined as measurements of the physical, chemical and/or biological environment, measured at a specific time in the past.  They may be direct or indirect measurements and may be feature or coverage data.  In order to be valid, observations data must carry geospatial and temporal metadata as well as variable values (or equivalent such as pixel values for a faster coverage).",	
-            "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/Observations"	
-          }	
-        ],	
+            "description": "Observations data are defined as measurements of the physical, chemical and/or biological environment, measured at a specific time in the past.  They may be direct or indirect measurements and may be feature or coverage data.  In order to be valid, observations data must carry geospatial and temporal metadata as well as variable values (or equivalent such as pixel values for a faster coverage).",
+            "url": "http://reference.metoffice.gov.uk/DataCategories/data-types/Observations"
+          }
+        ],
         "scheme": "http://reference.metoffice.gov.uk/DataCategories/data-types"
       },
-      {	
-        "concepts": [	
-          {	
-            "id": "weather",	
-            "title": "Weather",	
-            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"	
-          }	
-        ],	
+      {
+        "concepts": [
+          {
+            "id": "weather",
+            "title": "Weather",
+            "url": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline/weather"
+          }
+        ],
         "scheme": "https://github.com/wmo-im/wis2-topic-hierarchy/blob/main/topic-hierarchy/earth-system-discipline"
-       },
-       {	
-        "concepts": [	
-          {	
-            "id": "12-001",	
-            "title": "Temperature",	
+      },
+      {
+        "concepts": [
+          {
+            "id": "12-001",
+            "title": "Temperature",
             "url": "http://codes.wmo.int/bufr4/b/12/001"
           },
-          {	
-            "id": "11-001",	
-            "title": "Wind direction",	
+          {
+            "id": "11-001",
+            "title": "Wind direction",
             "url": "http://codes.wmo.int/bufr4/b/11/001"
-          },	
-          {	
-            "id": "11-002",	
-            "title": "Wind direction",	
+          },
+          {
+            "id": "11-002",
+            "title": "Wind direction",
             "url": "http://codes.wmo.int/bufr4/b/11/002"
           },
-          {	
-            "id": "13-002",	
-            "title": "Mixing ratio",	
-            "url": "http://codes.wmo.int/bufr4/b/13/002"	
+          {
+            "id": "13-002",
+            "title": "Mixing ratio",
+            "url": "http://codes.wmo.int/bufr4/b/13/002"
           }
-        ],	
+        ],
         "scheme": "http://codes.wmo.int/bufr4/b"
       }
-    ],	
-    "created": "2026-02-04T14:00:00Z",	
-    "updated": "2026-02-04T14:00:00Z",		
+    ],
+    "created": "2026-02-04T14:00:00Z",
+    "updated": "2026-02-04T14:00:00Z",
     "wmo:dataPolicy": "core",
     "rights": "Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021))",
     "type": "dataset",
-    "formats":[
-         {
-            "name":"bufr4",
-            "mediaType":"application/bufr",
-            "edition": "4"
-         }
+    "formats": [
+      {
+        "name": "bufr4",
+        "mediaType": "application/bufr",
+        "edition": "4"
+      }
     ],
     "status": {
       "id": "operational",
       "title": "dataset is in 24/7 operation",
       "url": "https://www.metoffice.gov.uk/services/data/business-data/observational"
     }
-  },	
-  "links": [	
-    {	
-      "rel": "related",	
-      "href": "https://www.eumetnet.eu/observations/aircraft-based-observations/",	
-      "type": "text/html",	
-      "title": "Documentation"	
-    },	
-    {	
-      "rel": "items",	
-      "href": "mqtts://broker.metoffice.gov.uk",	
-      "channel": "origin/a/wis2/eu-eumetnet-amdar/data/core/weather/surface-based-observations",	
-      "type": "application/geo+json",	
-      "title": "Data notifications broker",
-      "properties":{
-          "diagnostic": {
-               "type":"string",
-               "title":"Diagnostic",
-               "enum": ["Temperature","Wind direction","Wind speed","Mixing ratio"],
-               "description":"The diagnostic filter parameter is the title property of the concept object within the themes array, where the scheme is 'http://codes.wmo.int/bufr4/b'."
-            }
-          }
+  },
+  "links": [
+    {
+      "rel": "related",
+      "href": "https://www.eumetnet.eu/observations/aircraft-based-observations/",
+      "type": "text/html",
+      "title": "Documentation"
     },
-    {	
-      "rel": "service",	
-      "href": "https://metoffice.sharepoint.com/:u:/r/sites/ODSService/SitePages/Our-Data-Catalogue.aspx?csf=1&web=1&e=givi0e",	
-      "type": "text/html",	
-      "title": "Observation Data Supply Service"	
+    {
+      "rel": "items",
+      "href": "mqtts://broker.metoffice.gov.uk",
+      "channel": "origin/a/wis2/eu-eumetnet-amdar/data/core/weather/surface-based-observations",
+      "type": "application/geo+json",
+      "title": "Data notifications broker",
+      "properties": {
+        "diagnostic": {
+          "type": "string",
+          "title": "Diagnostic",
+          "enum": [
+            "Temperature",
+            "Wind direction",
+            "Wind speed",
+            "Mixing ratio"
+          ],
+          "description": "The diagnostic filter parameter is the title property of the concept object within the themes array, where the scheme is 'http://codes.wmo.int/bufr4/b'."
+        }
+      }
+    },
+    {
+      "rel": "service",
+      "href": "https://metoffice.sharepoint.com/:u:/r/sites/ODSService/SitePages/Our-Data-Catalogue.aspx?csf=1&web=1&e=givi0e",
+      "type": "text/html",
+      "title": "Observation Data Supply Service"
     }
-  ]	
-
-}	
-
-
+  ]
+}
