@@ -1,0 +1,165 @@
+[
+  {
+    "rel_path": "earth-system/eu-eumetnet-gnss/core/weather/surface-based-observations/gnss-total-delay/urn.wmo.md.eu-eumetnet-gnss.weather.surface-based-observations.gnss-total-delay.external.json",
+    "status": "ADD",
+    "rel": "canonical",
+    "topic": "origin/a/wis2/eu-eumetnet-gnss/metadata",
+    "notification": {
+      "id": "b569488a-fcd6-44b8-b280-8c39c7882f90",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "pubtime": "2026-04-16T14:56:20Z",
+        "data_id": "urn:wmo:md:eu-eumetnet-gnss:weather.surface-based-observations.gnss-total-delay",
+        "metadata_id": "urn:wmo:md:eu-eumetnet-gnss:weather.surface-based-observations.gnss-total-delay",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "dJO9mJgagplSb10N1V6TNz9ZJXimiWA+z2MT/umku8B+pjD13e+qu5om0mQVwwR4kbJ4/pBYw2pvQQ6s5susYA=="
+        },
+        "datetime": "2025-05-06T14:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/eu-eumetnet-gnss/core/weather/surface-based-observations/gnss-total-delay/urn.wmo.md.eu-eumetnet-gnss.weather.surface-based-observations.gnss-total-delay.external.json",
+          "rel": "canonical",
+          "type": "application/json",
+          "length": 5015
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  },
+  {
+    "rel_path": "earth-system/eu-eumetnet-amdar/core/weather/surface-based-observations/upper-air-observations/tamdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.tamdar.external.json",
+    "status": "ADD",
+    "rel": "canonical",
+    "topic": "origin/a/wis2/eu-eumetnet-amdar/metadata",
+    "notification": {
+      "id": "580d4e63-d632-49ef-bf2d-00273714e468",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180,
+              90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              180,
+              -90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              -180,
+              90
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pubtime": "2026-04-16T14:56:20Z",
+        "data_id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.tamdar",
+        "metadata_id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.tamdar",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "kjJBuoSpUvLc+NdXQtJRfokpFHbw8ly7XRID/2cqDIW7BEXGshvWFnDHk3jQz46qpErnSCmlNSXXuf3SKd1PfQ=="
+        },
+        "datetime": "2025-05-06T14:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/eu-eumetnet-amdar/core/weather/surface-based-observations/upper-air-observations/tamdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.tamdar.external.json",
+          "rel": "canonical",
+          "type": "application/json",
+          "length": 5800
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  },
+  {
+    "rel_path": "earth-system/eu-eumetnet-amdar/core/weather/surface-based-observations/upper-air-observations/amdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.amdar.external.json",
+    "status": "ADD",
+    "rel": "canonical",
+    "topic": "origin/a/wis2/eu-eumetnet-amdar/metadata",
+    "notification": {
+      "id": "85153198-e371-4a5b-9005-3439d69b5da1",
+      "conformsTo": [
+        "http://wis.wmo.int/spec/wnm/1/conf/core"
+      ],
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180,
+              90
+            ],
+            [
+              180,
+              90
+            ],
+            [
+              180,
+              -90
+            ],
+            [
+              -180,
+              -90
+            ],
+            [
+              -180,
+              90
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pubtime": "2026-04-16T14:56:20Z",
+        "data_id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.amdar",
+        "metadata_id": "urn:wmo:md:eu-eumetnet-amdar:weather.surface-based-observations.amdar",
+        "cache": true,
+        "integrity": {
+          "method": "sha512",
+          "value": "Jn5d96KV+2BE6cSboskdAZdXA5UA05ob0U+fKuRH4Q3G6NTHPzgw06rPWRkGVTpWyQCjIQqeWiM64IJkFdQzbQ=="
+        },
+        "datetime": "2026-02-04T14:00:00Z"
+      },
+      "links": [
+        {
+          "href": "https://raw.githubusercontent.com/mo-daniel-ungureanu/public-test/main/earth-system/eu-eumetnet-amdar/core/weather/surface-based-observations/upper-air-observations/amdar/urn.wmo.md.eu-eumetnet-amdar.weather.surface-based-observations.amdar.external.json",
+          "rel": "canonical",
+          "type": "application/json",
+          "length": 5860
+        }
+      ]
+    },
+    "validation_passed": true,
+    "validation_errors": [],
+    "published": true,
+    "publish_error": null
+  }
+]
